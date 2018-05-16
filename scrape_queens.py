@@ -25,5 +25,5 @@ for job in jobs:
 
     scraped_jobs.append(job_dict)
 
-with open('jobs.json', 'w') as out:
+with open('queens_jobs.json', 'w') as out:
     json.dump(scraped_jobs, out)
