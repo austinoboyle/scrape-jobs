@@ -7,12 +7,12 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+content_titles = ['Title', 'Company', 'URL', 'Industry', 'Description']
 
-content_titles = ['Title', 'Company', 'URL']
 postions = []
 
 # Iterate through every page
-for page_num in range(1, 20):
+for page_num in range(1, 5): #22
     # Build the new url for the page
     url = 'http://keys.ca/jobboard/search.php?page=' + str(page_num)
     page = requests.get(url)
@@ -30,10 +30,19 @@ for page_num in range(1, 20):
         # Split Company and Title
         title = t_and_c_arr[0].strip()
         company = t_and_c_arr[1][5:].strip()
-        url = str("http://keys.ca" + j.find('a').get('href'))
 
-        content = [title, company, url]
+        # Get URL, use to get description and industry
+        job_url = str("http://keys.ca" + j.find('a').get('href'))
+        job_page = requests.get(job_url)
+        job_soup = BeautifulSoup(job_page.text, 'html.parser')
+
+        industry = job_soup.find(class_="printme").find('small').text[16:].strip()
+        description = job_soup.find(class_="printme").findAll('p')[2].text
+
+        # Join all content into an array
+        content = [title, company, job_url, industry, description]
         job = {}
+
         # Add to job dictionary
         for i in range(len(content_titles)):
             job[content_titles[i]] = content[i]

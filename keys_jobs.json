@@ -1,837 +1,265 @@
 [{
   "Title": "Filling Operator",
   "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
+  "URL": "http://keys.ca/jobboard/listing.php?id=1178",
+  "Industry": "Production Work/Manufacturing / Production/Fabrication",
+  "Description": "Tri Art"
 }, {
-  "Title": "Ferry Clerk",
-  "Company": "Loyalist Township",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1321"
-}, {
-  "Title": "Programmer",
-  "Company": "EZ STAK Inc.",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1319"
-}, {
-  "Title": "Machine Operator - Turret Punch",
-  "Company": "EZ STAK Inc.",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1318"
-}, {
-  "Title": "Part-time Driver",
-  "Company": "Mousetrap Communications",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1317"
-}, {
-  "Title": "Seasonal Museum Attendant",
-  "Company": "Canada's Penitentiary Museum",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1316"
-}, {
-  "Title": "Visitor Centre Tourism Information Officer (Social Media Position - July 3rd to September 3rd 2018)",
-  "Company": "Town of Gananoque",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1315"
-}, {
-  "Title": "Framer Carpenter",
-  "Company": "First Capital Construction",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1314"
-}, {
-  "Title": "Youth Worker Full Time (35 hours per week) \u2013 Contract to June 27, 2019 (with possibility of extension)",
-  "Company": "RNJ  Youth Services",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1313"
-}, {
-  "Title": "Assistant to the Office Manager",
-  "Company": "First Capital Construction",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1312"
-}, {
-  "Title": "Landscaper and Field Support Staff",
-  "Company": "First Capital Construction",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1311"
-}, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
-}, {
-  "Title": "ADJOINT(E) AUX COMMUNICATIONS",
-  "Company": "Le Centre culturel Frontenac",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1310"
-}, {
-  "Title": "Program Assistant (Summer Student)",
-  "Company": "Girls Inc. Limestone",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1309"
-}, {
-  "Title": "2 Junior Business Analysts",
-  "Company": "Big River Technology",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1308"
-}, {
-  "Title": "Junior & Senior client-facing ReactJS developers",
-  "Company": "Big River Technology",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1307"
-}, {
-  "Title": "Maintenance",
-  "Company": "Sunnyside Family Retreat",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1306"
-}, {
-  "Title": "Cook (Casual)",
-  "Company": "County of Frontenac",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1305"
-}, {
-  "Title": "Automotive Mechanic",
-  "Company": "Dixon Automotive Group",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1304"
-}, {
-  "Title": "Treasury Clerk",
-  "Company": "Township of South Frontenac",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1303"
-}, {
-  "Title": "Line Cook/Prep Cook",
-  "Company": "Anthony\u2019s Restaurant",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1302"
-}, {
-  "Title": "Dishwasher",
-  "Company": "Anthony\u2019s Restaurant",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1301"
-}, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
-}, {
-  "Title": "Yard / Greenhouse",
-  "Company": "Westgate Landscape Supplies",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1300"
-}, {
-  "Title": "Customer Sales and Service Representative",
-  "Company": "Cash 4 You Corp",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1299"
-}, {
-  "Title": "Composer-in-Residence",
-  "Company": "Kingston Symphony Association",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1298"
-}, {
-  "Title": "Activity Aide at Carveth Care Centre",
-  "Company": "Gibson Family Health Care",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1297"
-}, {
-  "Title": "Laundry attendant",
-  "Company": "Holiday Inn  Epress & Suites",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1296"
-}, {
-  "Title": "Housekeeper",
-  "Company": "Holiday Inn  Epress & Suites",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1295"
-}, {
-  "Title": "Museum Assistant",
-  "Company": "Marine Museum of the Great Lakes at Kingston",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1294"
-}, {
-  "Title": "Manager",
-  "Company": "Bread & Butter Bakery and Toast & Jam",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1293"
-}, {
-  "Title": "Tele-Receptionist/ Telephone Operator",
-  "Company": "Alliance Wireless Communications",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1292"
-}, {
-  "Title": "Cleaner / Senior Concierge Assistant",
-  "Company": "Real Revivals",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1291"
-}, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
-}, {
-  "Title": "Food & Beverage - Administrative Coordinator",
-  "Company": "Kingston Destination Group",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1290"
-}, {
-  "Title": "Cashier/Clerk",
-  "Company": "Kudrinko's Ltd",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1289"
-}, {
-  "Title": "HR/Recruitment Assistant",
-  "Company": "HR Management Services on Demand",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1288"
-}, {
-  "Title": "Adult Literacy Support Worker",
-  "Company": "Kingston Literacy & Skills",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1287"
-}, {
-  "Title": "Sales Consultant - Product Specialist",
-  "Company": "MotoSport Plus",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1286"
-}, {
-  "Title": "Education Assistant",
-  "Company": "H'art Centre",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1285"
-}, {
-  "Title": "Field Technician",
-  "Company": "Lansdowne Rural Telephone Company",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1284"
-}, {
-  "Title": "Senior Structural Project Manager",
-  "Company": "Greer Galloway Consulting Engineers",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1283"
-}, {
-  "Title": "Mechanical Engineer",
-  "Company": "Greer Galloway Consulting Engineers",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1282"
-}, {
-  "Title": "Civil Certified Engineering Technologist (C.E.T.)",
-  "Company": "Greer Galloway Consulting Engineers",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1281"
-}, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
-}, {
-  "Title": "Dietary Aid",
-  "Company": "Lombard Manor",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1280"
-}, {
-  "Title": "Child and Youth Worker - Part time and Full Time",
-  "Company": "Briley Children's Residence",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1279"
-}, {
-  "Title": "Cook/Customer Service",
-  "Company": "Petra's Place",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1278"
-}, {
-  "Title": "Cook",
-  "Company": "Seeley's Bay Retirement Home",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1277"
-}, {
-  "Title": "Kitchen - Line & Production/Prep.",
-  "Company": "Woodview Inn",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1276"
-}, {
-  "Title": "Housekeeping - Rooms Division, The Woodview Inn",
-  "Company": "Woodview Inn",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1275"
-}, {
-  "Title": "Marine Mate Trainee",
-  "Company": "Loyalist Township",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1274"
-}, {
-  "Title": "CASUAL ACTIVITY CARE PARTNER \u2013 NO GUARANTEE OF HOURS",
-  "Company": "Community & Primary Health Care- Lanark, Leeds & Grenville (CPHC)",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1271"
+  "Title": "Registered Massage Therapist",
+  "Company": "Movewell Rehabilitation Services",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1329",
+  "Industry": "Health Care / Soins de sant\u00e9",
+  "Description": "Physiotherapy, Massage Therapy, Pelvic Health Physiotherapy, Custom Orthotics and Braces"
 }, {
   "Title": "Test of job board",
   "Company": "Creative Effects",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1269"
+  "URL": "http://keys.ca/jobboard/listing.php?id=1324",
+  "Industry": "Art/Design / Art/Conception graphique",
+  "Description": "Creative Effects is an award-winning Advertising and Design Studio established in 1986 to give local businesses the opportunity to deal with a full-service advertising firm. Since then we have expanded our capabilities to allow us to service regional, national and international accounts."
 }, {
-  "Title": "Breakfast Room Attendant",
-  "Company": "Thriftlodge Kingston",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1268"
+  "Title": "Ferry Clerk",
+  "Company": "Loyalist Township",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1321",
+  "Industry": "Other / Autre",
+  "Description": "Municipal Government"
 }, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
-}, {
-  "Title": "Kitchen Assistant",
-  "Company": "Jessup food & Heritage, Ltd.",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1267"
-}, {
-  "Title": "Residential Home and Cottage Cleaner",
-  "Company": "Hubby's House Cleaning Services",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1266"
-}, {
-  "Title": "Technical Analyst - Permanent",
-  "Company": "Upper Canada District School Board",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1265"
-}, {
-  "Title": "Drywaller",
-  "Company": "MDM SERVICES",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1264"
-}, {
-  "Title": "Kitchen Staff",
-  "Company": "Furnace Falls Farm / Wendy's Country Market",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1263"
-}, {
-  "Title": "Service Coordinator/Rental Agent/Estimator",
-  "Company": "Dixon Automotive Group",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1261"
-}, {
-  "Title": "General Labourer",
-  "Company": "Anonymous employer",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1260"
-}, {
-  "Title": "Registered Practical Nurse at Helen Henderson Retirement Lodge",
-  "Company": "Gibson Family Health Care",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1259"
-}, {
-  "Title": "Personal Support Worker at Helen Henderson Care Centre",
-  "Company": "Gibson Family Health Care",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1258"
-}, {
-  "Title": "Residential Aide",
-  "Company": "Gibson Family Health Care",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1257"
-}, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
-}, {
-  "Title": "Labourer",
-  "Company": "Lakeside Pools Kingston",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1256"
-}, {
-  "Title": "Registered Early Childhood Educator",
-  "Company": "Child Care United of Leeds and Grenville",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1249"
-}, {
-  "Title": "Client Care Coordinator",
-  "Company": "Caldwell Wealth & Estate Advisory",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1248"
-}, {
-  "Title": "Part time lumber yard/Counter Sales",
-  "Company": "Rideau Lakes Building Centre Lansdowne",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1247"
-}, {
-  "Title": "Shift Leader",
-  "Company": "Cardinal Health Canada",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1245"
-}, {
-  "Title": "Warehouse and Order Prep support",
-  "Company": "TASTE FOR LUXURY",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1244"
-}, {
-  "Title": "Cook",
-  "Company": "Wendy's Country Market",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1243"
-}, {
-  "Title": "Inspector / Packer",
-  "Company": "Cardinal Health Canada",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1242"
-}, {
-  "Title": "Registered Practical Nurse (RPN)",
-  "Company": "CBI Health Group",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1241"
-}, {
-  "Title": "Grounds Maintenance",
-  "Company": "Lyndway Golf",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1240"
-}, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
-}, {
-  "Title": "Clubhouse Attendant",
-  "Company": "Lyndway Golf",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1239"
-}, {
-  "Title": "Grounds Maintenance",
-  "Company": "Lyndway Golf",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1237"
-}, {
-  "Title": "Property Monitor - Student Position",
-  "Company": "Thousand Islands Watershed Land Trust",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1233"
-}, {
-  "Title": "Driving Instructor",
-  "Company": "KEYS JOB CENTRE (Recruiter)",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1232"
-}, {
-  "Title": "Health Promotion Specialist",
-  "Company": "Kingston Gets Active",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1231"
-}, {
-  "Title": "Accountant",
-  "Company": "HR Management Services on Demand",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1230"
-}, {
-  "Title": "Part-Time Housekeeper",
-  "Company": "Donald Gordon Conference Centre",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1229"
-}, {
-  "Title": "Summer Position: Administrative Coordinator",
-  "Company": "Kingston Arts Council",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1228"
-}, {
-  "Title": "Mechanical Draftsman",
+  "Title": "Programmer",
   "Company": "EZ STAK Inc.",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1227"
+  "URL": "http://keys.ca/jobboard/listing.php?id=1319",
+  "Industry": "Production Work/Manufacturing / Production/Fabrication",
+  "Description": "Looking for a vehicle storage solution that not only keeps you organized but maximizes efficiency and improves productivity? Make your search EZ.EZ STAK is an industry leader and manufacturer of modular interior storage systems for work trucks, service bodies, vans and trailers. We pride ourselves on delivering custom-fit and turnkey solutions, so whether you need a work-ready trailer, upfits to van interiors or just cabinets for your fleet, we\u2019ve got you covered. And because we only use products made of high-grade aluminum or galvanized steel, they\u2019re built to last \u2014 an average of 12 years, in fact.Take it from our satisfied fleet managers in the utility, telecom, cable, oil and gas, and construction industries: Getting work ready was never more EZ."
 }, {
   "Title": "Machine Operator - Turret Punch",
   "Company": "EZ STAK Inc.",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1226"
+  "URL": "http://keys.ca/jobboard/listing.php?id=1318",
+  "Industry": "Production Work/Manufacturing / Production/Fabrication",
+  "Description": "Looking for a vehicle storage solution that not only keeps you organized but maximizes efficiency and improves productivity? Make your search EZ.EZ STAK is an industry leader and manufacturer of modular interior storage systems for work trucks, service bodies, vans and trailers. We pride ourselves on delivering custom-fit and turnkey solutions, so whether you need a work-ready trailer, upfits to van interiors or just cabinets for your fleet, we\u2019ve got you covered. And because we only use products made of high-grade aluminum or galvanized steel, they\u2019re built to last \u2014 an average of 12 years, in fact.Take it from our satisfied fleet managers in the utility, telecom, cable, oil and gas, and construction industries: Getting work ready was never more EZ."
+}, {
+  "Title": "Part-time Driver",
+  "Company": "Mousetrap Communications",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1317",
+  "Industry": "Other / Autre",
+  "Description": "Real Estate Marketing and Sales"
+}, {
+  "Title": "Seasonal Museum Attendant",
+  "Company": "Canada's Penitentiary Museum",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1316",
+  "Industry": "Other / Autre",
+  "Description": "Canada's Penitentiary Museum is dedicated to the preservation and interpretation of the fascinating history of Canada's federal penitentiary system. Currently more than 50,000 people per year visit\u00a0this award-winning museum housed in the former Warden's residence of Kingston Penitentiary. We work to assist the Correctional Service of Canada with the preservation of\u00a0Canada's correctional story.\u00a0 Our museum features 8 rooms full of artifacts and exhibits, run by volunteers and staff."
+}, {
+  "Title": "Visitor Centre Tourism Information Officer (Social Media Position - July 3rd to September 3rd 2018)",
+  "Company": "Town of Gananoque",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1315",
+  "Industry": "Other / Autre",
+  "Description": "Gananoque, in the heart of the 1000 Islands, is recognized as one of Eastern Ontario's most stunning waterfront communities."
+}, {
+  "Title": "Framer Carpenter",
+  "Company": "First Capital Construction",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1314",
+  "Industry": "General Labour/Trades / Man\u0153uvres et gens de m\u00e9tiers",
+  "Description": "Residential and commercial contracting company"
+}, {
+  "Title": "Youth Worker Full Time (35 hours per week) \u2013 Contract to June 27, 2019 (with possibility of extension)",
+  "Company": "RNJ  Youth Services",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1313",
+  "Industry": "Social Services/Education / Services sociaux/ \u00c9ducation",
+  "Description": "We are seeking a dynamic Youth Worker to join the Connections team. Connections is a communityprogram, in partnership with the Brockville Police Service, that was created to work with students (grade6-12) who are showing evidence of disengaging from the school system as seen through suspensions,progression towards suspensions or difficulty participating in school programming and with at-risk youthwho have had or are moving towards contact with the criminal justice system. As part of a communityresponse to these youth, Connections provides intensive, personalized academic, social and life skilldevelopment opportunities to build positive experiences. To foster continuing success, the primaryfocus is on re-integrating the youth into an engaged community network."
 }, {
   "Title": "Filling Operator",
   "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
+  "URL": "http://keys.ca/jobboard/listing.php?id=1178",
+  "Industry": "Production Work/Manufacturing / Production/Fabrication",
+  "Description": "Tri Art"
 }, {
-  "Title": "Machine Operator - Brake Press",
-  "Company": "EZ STAK Inc.",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1225"
+  "Title": "Assistant to the Office Manager",
+  "Company": "First Capital Construction",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1312",
+  "Industry": "General Labour/Trades / Man\u0153uvres et gens de m\u00e9tiers",
+  "Description": "Residential and commercial contracting company"
 }, {
-  "Title": "Counter Salesperson",
-  "Company": "Rideau Lakes Building Centre",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1224"
+  "Title": "Landscaper and Field Support Staff",
+  "Company": "First Capital Construction",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1311",
+  "Industry": "General Labour/Trades / Man\u0153uvres et gens de m\u00e9tiers",
+  "Description": "Residential and commercial contracting company"
 }, {
-  "Title": "2 Delivery Drivers/Yard Assistants",
-  "Company": "Rideau Lakes Building Centre",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1222"
+  "Title": "ADJOINT(E) AUX COMMUNICATIONS",
+  "Company": "Le Centre culturel Frontenac",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1310",
+  "Industry": "Other / Autre",
+  "Description": "Le Centre culturel Frontenac (CCF) est un point d\u2019acc\u00e8s \u00e0 la diffusion des arts et de la culture en fran\u00e7ais, inclusif, rassembleur et moteur de d\u00e9veloppement de la communaut\u00e9 de Kingston. Son \u00e9quipe jeune et dynamique met l\u2019accent sur une exp\u00e9rience artistique unique entre les artistes et les publics. Le CCF est dot\u00e9 d\u2019une salle de spectacles professionnelle accueillant de 12 \u00e0 15 \u00e9v\u00e9nements par ann\u00e9e. Le Centre culturel Frontenac offre \u00e9galement un camp d\u2019\u00e9t\u00e9 artistique qui permet aux jeunes de la r\u00e9gion de d\u00e9velopper leurs comp\u00e9tences artistiques en compagnie de professionnels du m\u00e9tier. "
 }, {
-  "Title": "Housekeeper",
-  "Company": "Hotel Belvedere",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1221"
+  "Title": "Program Assistant (Summer Student)",
+  "Company": "Girls Inc. Limestone",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1309",
+  "Industry": "Other / Autre",
+  "Description": "Our Mission:\u00a0Inspiring all girls to be strong, smart and bold.Girls Inc. Limestone provides life-skills education and mentoring programs for girls, and is at the heart of girls' lives and forefront of the girls' rights movement. With programs that are grounded in research and tested in the field, our organization celebrates and empowers girls and young women, and advocates for an equitable world. The compelling voices and perspectives of girls and women are woven throughout our work, which includes engaging programs, original research that highlights underlying causes and effective solutions for girls' issues, and persuasive advocacy at both local and national levels.Girls Inc. Limestone was founded as Big Sisters of Kingston in 1972 by a small group of women dedicated to improving the life situation of girls in the Kingston community. Since that time, we have grown to serve more than 1,400 girls each year. We have expanded our life-skills education programs, and have taken on a new name and a new national organization. These changes have led to significant growth,\u00a0and a better ability to meet the needs of girls and young women in our community."
 }, {
-  "Title": "Sales Support",
-  "Company": "Fastenal Canada",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1220"
+  "Title": "2 Junior Business Analysts",
+  "Company": "Big River Technology",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1308",
+  "Industry": "Other / Autre",
+  "Description": "big river technologies inc. is a nearshore software development company founded by an experienced team of technology and business experts. We are located in the beautiful 1000 islands region and offer a healthy balance between work and free-time lifestyles. We are growing quickly and are working with top Fortune 500 clients in our space. If you succeed in a fast-paced, self-starting and client-facing environment, working with the latest technologies on exciting projects, then we want to hear from you. \u00a0"
 }, {
-  "Title": "Ecological Educator - Student position",
-  "Company": "Thousand Islands Watershed Land Trust",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1219"
+  "Title": "Junior & Senior client-facing ReactJS developers",
+  "Company": "Big River Technology",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1307",
+  "Industry": "Other / Autre",
+  "Description": "big river technologies inc. is a nearshore software development company founded by an experienced team of technology and business experts. We are located in the beautiful 1000 islands region and offer a healthy balance between work and free-time lifestyles. We are growing quickly and are working with top Fortune 500 clients in our space. If you succeed in a fast-paced, self-starting and client-facing environment, working with the latest technologies on exciting projects, then we want to hear from you. \u00a0"
 }, {
-  "Title": "Administrative Assistant",
-  "Company": "HR Management Services on Demand",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1217"
+  "Title": "Maintenance",
+  "Company": "Sunnyside Family Retreat",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1306",
+  "Industry": "Other / Autre",
+  "Description": "Campground and Family Vacation Destination"
 }, {
-  "Title": "Part Time Gelato Manufacturer",
-  "Company": "Mio Gelato",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1216"
+  "Title": "Cook (Casual)",
+  "Company": "County of Frontenac",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1305",
+  "Industry": "Other / Autre",
+  "Description": "The Corporation of the County of Frontenac is comprised of four departments: Fairmount Home, Corporate Services, Planning & Economic Development, and Emergency & Transportation Services, which includes Frontenac Paramedic Services, the Frontenac-Howe Islander Ferry, and Emergency Management. Geographically, Frontenac County encompasses four Townships \u2013 North, Central, South, and Frontenac Islands. Almost 4,000 square kilometres from the northern most tip to the Islands, Frontenac\u2019s landscape and communities are richly diverse."
 }, {
-  "Title": "COORDINATOR, INTERNATIONAL AGREEMENTS AND PARTNERSHIPS",
-  "Company": "Queen's University",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1215"
+  "Title": "Automotive Mechanic",
+  "Company": "Dixon Automotive Group",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1304",
+  "Industry": "Other / Autre",
+  "Description": "Dixon Automotive Group is a sole proprietorship corporation dealing with car sales, rentals and repairs. Head office is based in Brockville, Ontario with numerous locations across Eastern Ontario. We are an equal opportunity employer."
 }, {
-  "Title": "Physical Educator \u2013 Curriculum Development Coordinator",
-  "Company": "Canadian Forces Morale & Welfare Services",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1213"
-}, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
-}, {
-  "Title": "Housekeeping / Guest Room Attendant",
-  "Company": "EconoLodge Kingston",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1212"
-}, {
-  "Title": "Night Auditor / Front Desk Reception",
-  "Company": "EconoLodge Kingston",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1211"
-}, {
-  "Title": "Maintenance Person",
-  "Company": "EconoLodge Kingston",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1210"
-}, {
-  "Title": "Salesperson",
-  "Company": "Klips Pet Grooming & Boutique",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1208"
-}, {
-  "Title": "Social Services Assistant",
-  "Company": "Kingston Interval House",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1207"
-}, {
-  "Title": "First Cook",
-  "Company": "Donald Gordon Conference Centre",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1206"
-}, {
-  "Title": "Manufacturing/Labour",
-  "Company": "Ganreel",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1205"
-}, {
-  "Title": "LABOURER - 2 to 3 positions available",
-  "Company": "KMS - Kingston Masonry Services",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1204"
-}, {
-  "Title": "Public education/Museum Coordinator (Student)",
+  "Title": "Treasury Clerk",
   "Company": "Township of South Frontenac",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1203"
-}, {
-  "Title": "Camp Counsellor",
-  "Company": "Four Directions Aboriginal Student Centre",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1202"
+  "URL": "http://keys.ca/jobboard/listing.php?id=1303",
+  "Industry": "Other / Autre",
+  "Description": "Municipal government - township"
 }, {
   "Title": "Filling Operator",
   "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
+  "URL": "http://keys.ca/jobboard/listing.php?id=1178",
+  "Industry": "Production Work/Manufacturing / Production/Fabrication",
+  "Description": "Tri Art"
 }, {
-  "Title": "Greenhouse worker",
-  "Company": "Forman Farms",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1201"
-}, {
-  "Title": "COOK",
-  "Company": "Fairfield Manor",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1200"
-}, {
-  "Title": "Personal Support Worker",
-  "Company": "Fairfield Manor",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1199"
-}, {
-  "Title": "Registered Practical Nurse",
-  "Company": "Fairfield Manor",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1198"
-}, {
-  "Title": "Dietary Aide",
-  "Company": "Fairfield Manor",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1197"
-}, {
-  "Title": "Registered Massage Therapist",
-  "Company": "ForeverYoung",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1196"
-}, {
-  "Title": "Grademan",
-  "Company": "J Harrison Excavating and Pipeline Ltd",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1195"
-}, {
-  "Title": "Boat Builder - Marine Captenter, Mechanic, Electrician",
-  "Company": "MetalCraft Marine Incorporated",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1194"
-}, {
-  "Title": "Ophthalmic Assistant / Technician",
-  "Company": "Todd Urton Medicine Professional Corporation",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1193"
-}, {
-  "Title": "Residential/Commercial Cleaner",
-  "Company": "Healthy Home Maid Service Inc.",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1192"
-}, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
-}, {
-  "Title": "Residential/Commercial Cleaner",
-  "Company": "Healthy Home Maid Service Inc.",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1191"
-}, {
-  "Title": "Cook",
-  "Company": "Country Kitchen",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1190"
-}, {
-  "Title": "Buyer - Financial Services",
-  "Company": "Limestone District School Board",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1188"
-}, {
-  "Title": "Full Time Summer Sales Position",
-  "Company": "Jake by the Lake-Life is good",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1187"
-}, {
-  "Title": "Indigenous Counselor",
-  "Company": "Sexual Assault Centre Kingston",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1184"
-}, {
-  "Title": "Carpenter/Carpenter's Assistant/ Construction Labourer",
-  "Company": "Teixeira Construction Inc.",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1181"
+  "Title": "Line Cook/Prep Cook",
+  "Company": "Anthony\u2019s Restaurant",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1302",
+  "Industry": "Restaurant/Hotel / Restaurant/H\u00f4tel",
+  "Description": "Family Restaurant in heart of the 1000 islands."
 }, {
   "Title": "Dishwasher",
-  "Company": "The Ivy Restaurant",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1180"
+  "Company": "Anthony\u2019s Restaurant",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1301",
+  "Industry": "Restaurant/Hotel / Restaurant/H\u00f4tel",
+  "Description": "Family Restaurant in heart of the 1000 islands."
 }, {
-  "Title": "Skilled Labourers",
-  "Company": "Haakon Industries",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1179"
+  "Title": "Yard / Greenhouse",
+  "Company": "Westgate Landscape Supplies",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1300",
+  "Industry": "Sales/Customer Service / Vente",
+  "Description": "West Gate Landscape Supplies is a landscaping depot, specializing in getting their customers what they need when they need it. With over 30 years experience in business, Karen and Jack Cummings lead a small team who is available to you 7 days a week over the landscaping season."
 }, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
+  "Title": "Customer Sales and Service Representative",
+  "Company": "Cash 4 You Corp",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1299",
+  "Industry": "Sales/Customer Service / Vente",
+  "Description": "Cash 4 You | Loans and Financial Services"
 }, {
-  "Title": "Sales Representatives",
-  "Company": "Avon Canada Unit Leader",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1177"
+  "Title": "Composer-in-Residence",
+  "Company": "Kingston Symphony Association",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1298",
+  "Industry": "Other / Autre",
+  "Description": "The Kingston Symphony Association exists to produce and promote professional quality programs of instrumental and choral music for the education, enjoyment and enrichment of audiences in the Greater Kingston area. We are dedicated to the support, development and showcasing of Canadian artists and composers.\u00a0\u00a0\nThe Kingston Symphony Association is the umbrella organization for six performing ensembles including the Kingston Symphony, the Kingston Choral Society, the Kingston Youth Orchestra, the Kingston Youth Strings, the Kingston A-Strings, and the Kingston Community Strings. We are dedicated to musical development in our community and through our ensembles we are able to present orchestral and choral concerts, and involve young people in our community in professional level musical performances and training.\u00a0\u00a0\u00a0\nThe Kingston Symphony Association is also fortunate to have a Volunteer Committee who work on our behalf to raise funds for the operation of our organization and who provide financial awards for deserving young musicians each season. The Volunteer Committee is active in a range of annual fundraising programs including a Book Fair, Nearly New Sales, Vinyl Records Sales, House Tour, and Fashion Show.\u00a0\u00a0"
 }, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
-}, {
-  "Title": "Surveyor/Grade Person",
-  "Company": "G. Tackaberry Construction Co. Ltd.",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1174"
-}, {
-  "Title": "Tool Repair Technician",
-  "Company": "KEYS JOB CENTRE (Recruiter)",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1172"
-}, {
-  "Title": "Order Processing Clerk",
-  "Company": "HR Management Services on Demand",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1171"
-}, {
-  "Title": "Electronic Print Production/Bindery Worker",
-  "Company": "HR Management Services on Demand",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1170"
-}, {
-  "Title": "Installer \u2013 Stairs & Railings",
-  "Company": "HR Management Services on Demand",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1169"
-}, {
-  "Title": "Estimator & Coordinator, Masonry",
-  "Company": "HR Management Services on Demand",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1168"
-}, {
-  "Title": "Accounting / Data Entry Assistant",
-  "Company": "HR Management Services on Demand",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1167"
-}, {
-  "Title": "Technical Support Specialist",
-  "Company": "HR Management Services on Demand",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1166"
-}, {
-  "Title": "Plumber's Helper",
-  "Company": "HR Management Services on Demand",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1165"
-}, {
-  "Title": "Deli, Bakery, Fresh Produce",
-  "Company": "Metro",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1164"
-}, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
-}, {
-  "Title": "Pre-Planning Director",
-  "Company": "Glenhaven Memorial Gardens by Arbor Memorial",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1163"
-}, {
-  "Title": "RESIDENTIAL & COMMERCIAL PAINTER",
-  "Company": "Mike Cross Painting",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1162"
-}, {
-  "Title": "Yard Attendant/Delivery Driver",
-  "Company": "Lyndhurst Home Building Centre",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1160"
-}, {
-  "Title": "Support Services Aide ( Casual)",
-  "Company": "County of Frontenac",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1154"
-}, {
-  "Title": "Ferry Operator",
-  "Company": "County of Frontenac",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1153"
-}, {
-  "Title": "Carpenter / Roofer / General Labourer",
-  "Company": "Donaldson Construction",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1152"
-}, {
-  "Title": "Administrative and Office Assistant",
-  "Company": "Katrin Schubert Natural Health",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1151"
-}, {
-  "Title": "School Bus Driver - Kingston",
-  "Company": "First Student",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1146"
-}, {
-  "Title": "Automotive Apprentice",
-  "Company": "Jim Thompson Chrysler",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1145"
-}, {
-  "Title": "Experienced Construction Lead",
-  "Company": "Landmarque Contracting",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1142"
-}, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
-}, {
-  "Title": "Emploi d'\u00e9t\u00e9 \u00e9tudiant : Coordination de camp d'\u00e9t\u00e9 artistique",
-  "Company": "Le Centre culturel Frontenac",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1141"
-}, {
-  "Title": "Child caregiver - Private home",
-  "Company": "Bahay CAREgiver Services",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1140"
-}, {
-  "Title": "Child caregiver - Private home",
-  "Company": "Bahay CAREgiver Services",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1139"
-}, {
-  "Title": "Part Time Desk Clerk",
-  "Company": "Donald Gordon Conference Centre",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1138"
-}, {
-  "Title": "Mess Supervisor",
-  "Company": "Canadian Forces Morale & Welfare Services",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1134"
-}, {
-  "Title": "Wrecking yard General Labourer",
-  "Company": "Morgan's Diesel Truck Parts",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1132"
-}, {
-  "Title": "Registered Practical Nurse at Carveth Care Centre",
+  "Title": "Activity Aide at Carveth Care Centre",
   "Company": "Gibson Family Health Care",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1130"
+  "URL": "http://keys.ca/jobboard/listing.php?id=1297",
+  "Industry": "Health Care / Soins de sant\u00e9",
+  "Description": "Retirement living and long-term care."
 }, {
-  "Title": "Project Lead/Master Painter",
-  "Company": "Added Touch Custom Decorating",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1125"
-}, {
-  "Title": "Part Time Cleaner or Couple Required in Johnstown",
-  "Company": "Glacier Maintenance Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1123"
-}, {
-  "Title": "RPN's required",
-  "Company": "Limestone City Home Health Care",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1119"
-}, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
-}, {
-  "Title": "Personal Support Worker and Health Care Aids",
-  "Company": "Limestone City Home Health Care",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1118"
-}, {
-  "Title": "Housekeepers",
-  "Company": "Boston Chinese Restaurant",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1117"
-}, {
-  "Title": "Injection Mold Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1115"
-}, {
-  "Title": "Summer Student Position",
-  "Company": "Kingston Day Care",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1098"
-}, {
-  "Title": "Project Manager",
-  "Company": "big river technologies inc.",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1095"
-}, {
-  "Title": "QA Lead",
-  "Company": "big river technologies inc.",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1092"
-}, {
-  "Title": "Dental Receptionist job posting",
-  "Company": "Limestone City Dental Centre",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1091"
-}, {
-  "Title": "Full and Part Time Line Cooks, Prep Cooks  (permanent and seasonal positions)",
-  "Company": "The Gananoque Inn & Spa",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1089"
-}, {
-  "Title": "Talent Acquisition Lead",
-  "Company": "big river technologies inc.",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1088"
-}, {
-  "Title": "Breakfast Cook",
-  "Company": "The Gananoque Inn & Spa",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1086"
-}, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
-}, {
-  "Title": "Roofers and Labourers wanted immediately",
-  "Company": "King McLean Roofing",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1085"
-}, {
-  "Title": "Seasonal Maintenance Worker",
-  "Company": "The Gananoque Inn & Spa",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1084"
-}, {
-  "Title": "Electronic Print Production/Bindery Worker",
-  "Company": "HR Management Services on Demand",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1081"
+  "Title": "Laundry attendant",
+  "Company": "Holiday Inn  Epress & Suites",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1296",
+  "Industry": "Restaurant/Hotel / Restaurant/H\u00f4tel",
+  "Description": "Hotel 61 rooms in Gananoque"
 }, {
   "Title": "Housekeeper",
   "Company": "Holiday Inn  Epress & Suites",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1080"
+  "URL": "http://keys.ca/jobboard/listing.php?id=1295",
+  "Industry": "Restaurant/Hotel / Restaurant/H\u00f4tel",
+  "Description": "Hotel 61 rooms in Gananoque"
 }, {
-  "Title": "Restaurant Server",
-  "Company": "The Galley Restaurant",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1079"
+  "Title": "Museum Assistant",
+  "Company": "Marine Museum of the Great Lakes at Kingston",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1294",
+  "Industry": "Social Services/Education / Services sociaux/ \u00c9ducation",
+  "Description": "The Marine Museum has a mission to inspire an enduring connection to the maritime history of Kingston and the Great Lakes. Our mandate is to preserve, interpret and educate our collections and make those collections accessible to the public for research.\u00a0\n\u00a0"
 }, {
-  "Title": "Server Assistant",
-  "Company": "The Galley Restaurant",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1078"
-}, {
-  "Title": "Cook",
-  "Company": "The Galley Restaurant",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1077"
-}, {
-  "Title": "Prep Cook",
-  "Company": "The Galley Restaurant",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1076"
-}, {
-  "Title": "Dishwasher",
-  "Company": "The Galley Restaurant",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1075"
-}, {
-  "Title": "Assistant Naturalist",
-  "Company": "Frontenac Arch Biosphere Foundation",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1074"
+  "Title": "Manager",
+  "Company": "Bread & Butter Bakery and Toast & Jam",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1293",
+  "Industry": "Restaurant/Hotel / Restaurant/H\u00f4tel",
+  "Description": "Bread & Butter is a retail bakery preparing all baked goods right on premises and selling in our store front.\u00a0 Toast & Jam is connected to the bakery and is a breakfast and lunch restaurant serving up wholesome delicious meals."
 }, {
   "Title": "Filling Operator",
   "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
+  "URL": "http://keys.ca/jobboard/listing.php?id=1178",
+  "Industry": "Production Work/Manufacturing / Production/Fabrication",
+  "Description": "Tri Art"
 }, {
-  "Title": "Camp Counsellor",
-  "Company": "Frontenac Arch Biosphere Foundation",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1072"
+  "Title": "Tele-Receptionist/ Telephone Operator",
+  "Company": "Alliance Wireless Communications",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1292",
+  "Industry": "Clerical/Administrative / Administration/Travail de bureau",
+  "Description": "Locally owned and operated since 1948\nAward Winning Telephone Answering Service\u00a0\u00a0 24 hours a day- 7 days a week\nMission Statement: To be\u00a0 a company that is respected for its Quality People, Quality Products and Superior Customer Service.\u00a0 To achieve this goal, we will work together as a TEAM, with INTEGRITY and PROFESSIONALISM\nWe answer the business phone lines for hundreds of types of business, take and relay messages, book appointments and make reservations, handle emergency after hours calls, voice mail, overflow calls, employee check in lines etc.\u00a0 Our clients include service companies(electricians, plumbers, HVAC), funeral homes, small business, lawyers, doctors, storage companies, property managment, tow companines and many more."
 }, {
-  "Title": "Automation Specialist",
-  "Company": "Homestead Land Holdings Limited",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1068"
+  "Title": "Cleaner / Senior Concierge Assistant",
+  "Company": "Real Revivals",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1291",
+  "Industry": "Other / Autre",
+  "Description": "Property Styling, Home Staging and Help at Home Services for Seniors"
 }, {
-  "Title": "Welder",
-  "Company": "Greg Fleming Contracting",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1066"
+  "Title": "Food & Beverage - Administrative Coordinator",
+  "Company": "Kingston Destination Group",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1290",
+  "Industry": "Customer Service / Service \u00e0 la client\u00e8le",
+  "Description": "Kingston Destination Group operates Kingston 1000 Islands Cruises, Kingston Trolley Tours, Waterfront Gifts & Apparel, Wheelhouse Culinary, and K-Pass. We are committed to being the portal to the inspired visitor experience in the Kingston 1000 Islands destination.\u00a0"
 }, {
-  "Title": "RPN's Wanted",
-  "Company": "Comfort Keepers of Kingston",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1060"
+  "Title": "Cashier/Clerk",
+  "Company": "Kudrinko's Ltd",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1289",
+  "Industry": "Sales/Customer Service / Vente",
+  "Description": "Retail grocery store with full offering of fresh departments as well as full service catering."
 }, {
-  "Title": "PSW's Wanted",
-  "Company": "Comfort Keepers of Kingston",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1059"
+  "Title": "HR/Recruitment Assistant",
+  "Company": "HR Management Services on Demand",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1288",
+  "Industry": "Other / Autre",
+  "Description": "."
 }, {
-  "Title": "Swim Coach",
-  "Company": "Canadian Forces Morale & Welfare Services",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1056"
+  "Title": "Adult Literacy Support Worker",
+  "Company": "Kingston Literacy & Skills",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1287",
+  "Industry": "Social Services/Education / Services sociaux/ \u00c9ducation",
+  "Description": " Kingston Literacy & Skills (KL&S;) is a non-profit community organization. With professional, knowledgeable staff and dedicated volunteers, we deliver literacy upgrading and workforce preparation programming to adults and families in Kingston and surrounding communities.\nSince our beginnings in 1977, we have been unwavering in our efforts to support and encourage adults with low literacy skills; we work with them to achieve their goals of further education, employment or independence."
 }, {
-  "Title": "Framers and labourer wanted",
-  "Company": "Schulze Construction Services",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1050"
+  "Title": "Sales Consultant - Product Specialist",
+  "Company": "MotoSport Plus",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1286",
+  "Industry": "Sales/Customer Service / Vente",
+  "Description": "Harley-Davidson and Honda motorcycle, ATV and power equipment dealership. Motorcycle sales, general merchandise, parts and accessories and service facility."
 }, {
-  "Title": "Stirling Lodge Housekeepers",
-  "Company": "Stirling Lodge",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1046"
+  "Title": "Education Assistant",
+  "Company": "H'art Centre",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1285",
+  "Industry": "Other / Autre",
+  "Description": "H\u2019art Centre is a non-profit, charitable community arts hub where people with disabilities and people facing barriers have the space and opportunity to study, practice, and produce works in the arts. Our mandate includes the development of programs, activities, events, partnerships, collaboration, and enterprises, to foster such opportunities so all people can participate in the arts throughout their lives and as they age."
 }, {
-  "Title": "Farm Labourer",
-  "Company": "Mensen Farm",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1043"
+  "Title": "Field Technician",
+  "Company": "Lansdowne Rural Telephone Company",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1284",
+  "Industry": "Other / Autre",
+  "Description": "Telephone Company"
 }, {
-  "Title": "Construction Laborer",
-  "Company": "Riverton Homes",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1040"
-}, {
-  "Title": "Filling Operator",
-  "Company": "Tri-Art Manufacturing Inc",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1178"
-}, {
-  "Title": "Plastic products manufacturing supervisor",
-  "Company": "Monarch Plastics Ltd. / Monarch Plastics",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1032"
-}, {
-  "Title": "Panache Bakery& Cafe: Permanent Store attendant",
-  "Company": "Panache Bakery and Cafe",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1028"
-}, {
-  "Title": "310T Heavy Duty Mechanic/Apprentice",
-  "Company": "Westbrook Truck Repair",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1023"
-}, {
-  "Title": "Assembler",
-  "Company": "EZ STAK Inc.",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1016"
-}, {
-  "Title": "Insulation Installer",
-  "Company": "Kingston Spray Foam Insulation",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1015"
-}, {
-  "Title": "Part-Time Reserves Officer in Kingston - Logistics Officer",
-  "Company": "21 Electronic Warfare Regiment (Candian Forces Army Reserve)",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1014"
-}, {
-  "Title": "Part-Time Army Reserve Officer- Signals Officer",
-  "Company": "21 Electronic Warfare Regiment (Candian Forces Army Reserve)",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1013"
-}, {
-  "Title": "Part-Time Army Reserve in Kingston - Communications Research Operator",
-  "Company": "21 Electronic Warfare Regiment (Candian Forces Army Reserve)",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1012"
-}, {
-  "Title": "Part-Time Army Reserve in Kingston - Mobile Support Equipment Operators",
-  "Company": "21 Electronic Warfare Regiment (Candian Forces Army Reserve)",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1011"
-}, {
-  "Title": "Part-Time Army Reserves in Kingston - Vehicle Technician",
-  "Company": "21 Electronic Warfare Regiment (Candian Forces Army Reserve)",
-  "URL": "http://keys.ca/jobboard/listing.php?id=1010"
+  "Title": "Senior Structural Project Manager",
+  "Company": "Greer Galloway Consulting Engineers",
+  "URL": "http://keys.ca/jobboard/listing.php?id=1283",
+  "Industry": "Other / Autre",
+  "Description": "Established in 1965, The Greer Galloway Group Inc. offers a complete range of professional planning and engineering consulting services to public and private sector clients across Ontario.\u00a0 Over the past fifty years, the company has successfully completed numerous projects and has earned a reputation for integrity, competence and professional service. \u00a0The Greer Galloway Group Inc., is registered with Professional Engineers Ontario and holds a Certificate of Authorization to practice the disciplines of civil, structural, environmental, mechanical, and electrical and geotechnical engineering. We are also a certified by the Association of Consulting Engineers of Canada, and a member firm of Consulting Engineers of Ontario, designated accordingly as a practicing firm of consulting engineers.\u00a0 We employ more than 60 full time staff including senior, intermediate and junior professional engineers, certified technologists and planners, and maintain fully staffed, permanent offices in Kingston, Belleville and Peterborough."
 }]
