@@ -20,8 +20,8 @@ for job in jobs:
     link = job.find_element_by_css_selector(
         'a[title="View job details"]').get_attribute('href')
     job_dict['URL'] = link
-    for i, col in enumerate(cols):
-        job_dict[col_titles[i]] = col.text
+    for title, col in zip(col_titles, cols):
+        job_dict[title] = col.text
 
     scraped_jobs.append(job_dict)
 

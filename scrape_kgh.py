@@ -1,6 +1,9 @@
 from selenium.webdriver import Chrome
 import json
 from pprint import pprint
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 scraped_jobs = []
 
@@ -8,17 +11,31 @@ KGH_CAREERS_URL = 'https://career5.successfactors.eu/career?company=KGH&career_n
 driver = Chrome()
 driver.get(KGH_CAREERS_URL)
 
+try:
+    element = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, "a.jobTitle"))
+    )
+except:
+    print("TIMEOUT EXCEPTION")
+    driver.quit()
+
 jobs = driver.find_elements_by_css_selector('tr.jobResultItem')
 
 for job in jobs:
     job_dict = {}
+
+    link = job.find_element_by_css_selector(
+        'a.jobTitle').get_attribute('href')
+    job_dict['URL'] = link
+
     name = job.find_element_by_css_selector('a.jobTitle')
     job_dict['Title'] = name.text
-    #category = job.find_element_by_css_selector('span.jobContentEM')
-    #job_dict['Category'] = category.text
-    # link = job.find_element_by_css_selector(
-    #    'a.jobtitle, a.turnstileLink').get_attribute('href')
-    #job_dict['URL'] = link
+
+    descriptions = job.find_elements_by_css_selector('span.jobContentEM')
+    descriptions_col = ['ID', 'Open Date', 'Category']
+    for title, col in zip(descriptions_col, descriptions):
+        job_dict[title] = col.text
+
     scraped_jobs.append(job_dict)
 
 
