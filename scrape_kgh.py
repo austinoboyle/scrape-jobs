@@ -30,6 +30,7 @@ for job in jobs:
 
     name = job.find_element_by_css_selector('a.jobTitle')
     job_dict['Title'] = name.text
+    job_dict['Company'] = 'Kingston General Hospital'
 
     descriptions = job.find_elements_by_css_selector('span.jobContentEM')
     descriptions_col = ['ID', 'Open Date', 'Category']

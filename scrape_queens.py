@@ -20,6 +20,7 @@ for job in jobs:
     link = job.find_element_by_css_selector(
         'a[title="View job details"]').get_attribute('href')
     job_dict['URL'] = link
+    job_dict['Company'] = "Queen's University"
     for title, col in zip(col_titles, cols):
         job_dict[title] = col.text
 

@@ -14,3 +14,12 @@ full_arr = city_arr + queens_arr + keys_arr + kgh_arr
 
 with open('combined_jobs.json', 'w') as out:
     json.dump(full_arr, out)
+
+VAR_NAME = 'data'
+
+file_text = 'export const {} = '.format(VAR_NAME)
+file_text += str(full_arr)
+file_text += ';'
+
+with open('combined_jobs.js', 'w') as out:
+    out.write(file_text)
