@@ -12,7 +12,7 @@ content_titles = ['Title', 'Company', 'URL', 'Industry', 'Description']
 postions = []
 
 # Iterate through every page
-for page_num in range(1, 5): #22
+for page_num in range(1, 22):
     # Build the new url for the page
     url = 'http://keys.ca/jobboard/search.php?page=' + str(page_num)
     page = requests.get(url)
