@@ -8,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-content_titles = ['Title', 'Company', 'Url']
+content_titles = ['Title', 'Company', 'URL']
 postions = []
 
 # Iterate through every page
