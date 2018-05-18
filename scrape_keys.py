@@ -7,6 +7,7 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import os
 
 content_titles = ['Title', 'Company', 'URL']
 postions = []
@@ -42,5 +43,6 @@ for page_num in range(1, 20):
         postions.append(job)
 
 # Dump positions to json
-with open('keys_jobs.json', 'w') as out:
+outDir = str(os.getenv('OUTDIR'))
+with open(outDir+'keys_jobs.json', 'w') as out:
     json.dump(postions, out)

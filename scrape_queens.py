@@ -1,10 +1,11 @@
-from selenium.webdriver import Chrome
+from selenium import webdriver
 import json
 from pprint import pprint
+import os
 
 QUEENS_CAREERS_URL = 'https://queensu.njoyn.com/cl4/xweb/Xweb.asp?tbtoken=Zl5aRR8XCB1xEHQDN1AmCCM%2FBmdEcCJfBkgjWiwME2UtXEQSXUdpcWMuJS5ALiRedQkbUxFaS3cqWA%3D%3D&chk=dFlbQBJe&page=joblisting&CLID=74827'
 
-driver = Chrome()
+driver = webdriver.Chrome()
 driver.get(QUEENS_CAREERS_URL)
 
 scraped_jobs = []
@@ -25,5 +26,6 @@ for job in jobs:
 
     scraped_jobs.append(job_dict)
 
-with open('queens_jobs.json', 'w') as out:
+outDir = str(os.getenv('OUTDIR'))
+with open(outDir+'queens_jobs.json', 'w') as out:
     json.dump(scraped_jobs, out)

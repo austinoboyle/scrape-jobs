@@ -1,6 +1,7 @@
 from selenium.webdriver import Chrome
 import json
 from pprint import pprint
+import os
 
 scraped_jobs = []
 
@@ -22,6 +23,6 @@ for page_num in range(0, 9):
         job_dict['URL'] = link
         scraped_jobs.append(job_dict)
 
-
-with open('indeed_jobs.json', 'w') as out:
+outDir = str(os.getenv('OUTDIR'))
+with open(outDir+'indeed_jobs.json', 'w') as out:
     json.dump(scraped_jobs, out)

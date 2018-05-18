@@ -1,6 +1,7 @@
 from selenium.webdriver import Chrome
 import json
 from pprint import pprint
+import os
 
 CITY_CAREERS_URL = 'https://careers.cityofkingston.ca/CL2/xweb/XWeb.asp?tbtoken=YF9bQhwXCGh2Yy4lLkAuJF5wNlQmCFY%2FBhdEcCIocEggISx%2BExVQKjIdUUQfBWEEAwkbUhRXTncqWA%3D%3D&chk=dFlbQBJe&clid=61577&Page=joblisting&CategoryID=2325,2326,2327,2328,2329,2330,2331,2332,2333,2334,2335,2336,2337,2338,2339,2340,2341,2342,2343,2344,2345,2346,2347,2348,2349,2350,2351,2352,2354,2355,2356,2357'
 driver = Chrome()
@@ -24,5 +25,6 @@ for job in jobs:
 
     scraped_jobs.append(job_dict)
 
-with open('city_jobs.json', 'w') as out:
+outDir = str(os.getenv('OUTDIR'))
+with open(outDir+'city_jobs.json', 'w') as out:
     json.dump(scraped_jobs, out)
