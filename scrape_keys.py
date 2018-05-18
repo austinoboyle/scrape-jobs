@@ -25,7 +25,7 @@ for page_num in range(1, 20):
 
         # Company and Title Stored Together
         # .replace("'", "\\\'")
-        title_and_company = str(j.find(class_="col-sm-4").text)
+        title_and_company = j.find(class_="col-sm-4").text
         t_and_c_arr = title_and_company.split('(#')
 
         # Split Company and Title

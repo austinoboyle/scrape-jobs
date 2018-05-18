@@ -1,4 +1,4 @@
-from selenium.webdriver import Chrome
+from selenium import webdriver
 import json
 from pprint import pprint
 import os
@@ -6,7 +6,10 @@ import os
 scraped_jobs = []
 
 KGH_CAREERS_URL = 'https://career5.successfactors.eu/career?company=KGH&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&_s.crb=lcJWb0ftX8PpE5Ez4PvdEQmYLSw%3d'
-driver = Chrome()
+options = webdriver.ChromeOptions()
+options.add_argument("--headless")
+options.add_argument("--disable-gpu")
+driver = webdriver.Chrome(chrome_options=options)
 driver.get(KGH_CAREERS_URL)
 
 jobs = driver.find_elements_by_css_selector('tr.jobResultItem')

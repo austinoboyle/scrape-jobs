@@ -1,4 +1,4 @@
-from selenium.webdriver import Chrome
+from selenium import webdriver
 import json
 from pprint import pprint
 import os
@@ -8,7 +8,10 @@ scraped_jobs = []
 for page_num in range(0, 9):
     INDEED_CAREERS_URL = 'https://ca.indeed.com/jobs?q=&l=Kingston%2C+ON&start=' + \
         str(page_num)+"0"
-    driver = Chrome()
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")
+    options.add_argument("--disable-gpu")
+    driver = webdriver.Chrome(chrome_options=options)
     driver.get(INDEED_CAREERS_URL)
 
     jobs = driver.find_elements_by_css_selector('div.row.result.clickcard')
