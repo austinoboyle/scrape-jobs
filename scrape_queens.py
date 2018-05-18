@@ -3,9 +3,14 @@ import json
 from pprint import pprint
 
 QUEENS_CAREERS_URL = 'https://queensu.njoyn.com/cl4/xweb/Xweb.asp?tbtoken=Zl5aRR8XCB1xEHQDN1AmCCM%2FBmdEcCJfBkgjWiwME2UtXEQSXUdpcWMuJS5ALiRedQkbUxFaS3cqWA%3D%3D&chk=dFlbQBJe&page=joblisting&CLID=74827'
-
 driver = Chrome()
 driver.get(QUEENS_CAREERS_URL)
+
+with open('sectors.json') as data_file:
+    data = json.load(data_file)
+sectors = []
+for header in data:
+    sectors.append(header)
 
 scraped_jobs = []
 NUM_COLS = 6
@@ -23,6 +28,13 @@ for job in jobs:
     job_dict['Company'] = "Queen's University"
     for title, col in zip(col_titles, cols):
         job_dict[title] = col.text
+    job_dict['Sectors'] = []
+
+    for sector in sectors:
+        for syn in data[sector]:
+            if(syn in job_dict['Title']):
+                job_dict['Sectors'].append(sector)
+                break
 
     scraped_jobs.append(job_dict)
 

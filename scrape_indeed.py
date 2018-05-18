@@ -4,6 +4,12 @@ from pprint import pprint
 
 scraped_jobs = []
 
+with open('sectors.json') as data_file:
+    data = json.load(data_file)
+sectors = []
+for header in data:
+    sectors.append(header)
+
 for page_num in range(0, 9):
     INDEED_CAREERS_URL = 'https://ca.indeed.com/jobs?q=&l=Kingston%2C+ON&start=' + \
         str(page_num)+"0"
@@ -20,6 +26,15 @@ for page_num in range(0, 9):
         link = job.find_element_by_css_selector(
             'a.jobtitle, a.turnstileLink').get_attribute('href')
         job_dict['URL'] = link
+
+        job_dict['Sectors'] = []
+
+        for sector in sectors:
+            for syn in data[sector]:
+                if(syn in job_dict['Title']):
+                    job_dict['Sectors'].append(sector)
+                    break
+
         scraped_jobs.append(job_dict)
 
 

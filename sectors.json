@@ -1,0 +1,83 @@
+{
+  "Healthcare": [
+    "Healthcare",
+    "Nurse",
+    "Doctor",
+    "Psychiatrist",
+    "Surgeon",
+    "Dental",
+    "Dentist",
+    "Therapist",
+    "Health",
+    "Aide",
+    "Care",
+    "RPN",
+    "Registered",
+    "Practical"
+  ],
+
+  "Hospitality": ["Cleaner", "Housekeeper", "Laundry attendant", "Hospitality"],
+
+  "Restaurant": [
+    "Restaurant",
+    "Cook",
+    "Server",
+    "Waiter",
+    "Waitress",
+    "Dishwasher",
+    "Food"
+  ],
+
+  "Management": ["Management", "Manager", "Assistant", "Project", "Lead"],
+
+  "Accounting & Finance": [
+    "Accounting",
+    "Finance",
+    "Financial",
+    "Auditor",
+    "Bookkeeper",
+    "CPA"
+  ],
+
+  "Customer Service": ["Customer", "Service", "Sales", "Food"],
+
+  "Computer & IT": [
+    "Programmer",
+    "Computer",
+    "QA",
+    "IT",
+    "Tech",
+    "Technology",
+    "Web"
+  ],
+
+  "Travel & Tourism": ["Tourism", "Travel", "Visitor"],
+
+  "Construction": [
+    "Construction",
+    "Machine",
+    "Carpenter",
+    "Landscaper",
+    "Field",
+    "Labourer",
+    "Mechanical",
+    "Grademan",
+    "Surveyor",
+    "Roofer",
+    "Assembler",
+    "Electrician",
+    "Welder"
+  ],
+
+  "Personal Care & Services": [
+    "Personal",
+    "Support",
+    "Worker",
+    "PSW",
+    "Care",
+    "Aide",
+    "Aid",
+    "Retirement",
+    "Child"
+  ]
+}

@@ -19,6 +19,13 @@ except:
     print("TIMEOUT EXCEPTION")
     driver.quit()
 
+with open('sectors.json') as data_file:
+    data = json.load(data_file)
+sectors = []
+for header in data:
+    sectors.append(header)
+
+
 jobs = driver.find_elements_by_css_selector('tr.jobResultItem')
 
 for job in jobs:
@@ -36,6 +43,14 @@ for job in jobs:
     descriptions_col = ['ID', 'Open_Date', 'Category']
     for title, col in zip(descriptions_col, descriptions):
         job_dict[title] = col.text
+
+    job_dict['Sectors'] = []
+
+    for sector in sectors:
+        for syn in data[sector]:
+            if(syn in job_dict['Title']):
+                job_dict['Sectors'].append(sector)
+                break
 
     scraped_jobs.append(job_dict)
 

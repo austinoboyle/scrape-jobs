@@ -10,6 +10,12 @@ scraped_jobs = []
 NUM_COLS = 6
 col_titles = ['ID', 'Title', 'Category', 'Open_Date', 'Close_Date']
 
+with open('sectors.json') as data_file:
+    data = json.load(data_file)
+sectors = []
+for header in data:
+    sectors.append(header)
+
 table = driver.find_element_by_id('searchtable')
 jobs = table.find_elements_by_css_selector('tbody tr')
 
@@ -22,6 +28,14 @@ for job in jobs:
     job_dict['Company'] = 'City of Kingston'
     for i, col in enumerate(cols):
         job_dict[col_titles[i]] = col.text
+
+    job_dict['Sectors'] = []
+
+    for sector in sectors:
+        for syn in data[sector]:
+            if(syn in job_dict['Title']):
+                job_dict['Sectors'].append(sector)
+                break
 
     scraped_jobs.append(job_dict)
 
