@@ -33,7 +33,7 @@ for job in jobs:
     job_dict['Company'] = 'Kingston General Hospital'
 
     descriptions = job.find_elements_by_css_selector('span.jobContentEM')
-    descriptions_col = ['ID', 'Open Date', 'Category']
+    descriptions_col = ['ID', 'Open_Date', 'Category']
     for title, col in zip(descriptions_col, descriptions):
         job_dict[title] = col.text
 

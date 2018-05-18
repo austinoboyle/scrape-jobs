@@ -7,7 +7,8 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-content_titles = ['Title', 'Company', 'URL', 'Industry', 'Description']
+content_titles = ['Title', 'Company', 'URL', 'Category', 'Description']
+
 
 postions = []
 
@@ -36,7 +37,8 @@ for page_num in range(1, 22):
         job_page = requests.get(job_url)
         job_soup = BeautifulSoup(job_page.text, 'html.parser')
 
-        industry = job_soup.find(class_="printme").find('small').text[16:].strip()
+        industry = job_soup.find(class_="printme").find(
+            'small').text[16:].strip()
         description = job_soup.find(class_="printme").findAll('p')[2].text
 
         # Join all content into an array

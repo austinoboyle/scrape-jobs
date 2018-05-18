@@ -8,7 +8,7 @@ driver.get(CITY_CAREERS_URL)
 
 scraped_jobs = []
 NUM_COLS = 6
-col_titles = ['ID', 'Title', 'Category', 'Open Date', 'Close Date']
+col_titles = ['ID', 'Title', 'Category', 'Open_Date', 'Close_Date']
 
 table = driver.find_element_by_id('searchtable')
 jobs = table.find_elements_by_css_selector('tbody tr')
