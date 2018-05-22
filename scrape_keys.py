@@ -8,6 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
+
 def keys():
     content_titles = ['Title', 'Company', 'URL', 'Category', 'Description']
     postions = []
@@ -18,7 +19,6 @@ def keys():
     sectors = []
     for header in data:
         sectors.append(header)
-
 
     # Iterate through every page
     for page_num in range(1, 22):
@@ -61,7 +61,7 @@ def keys():
             job_dict['Sectors'] = []
             for sector in sectors:
                 for syn in data[sector]:
-                    if(syn in job_dict['Title']):
+                    if(syn.lower() in job_dict['Title'].lower()):
                         job_dict['Sectors'].append(sector)
                         break
 

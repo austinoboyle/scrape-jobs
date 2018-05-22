@@ -8,6 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def kgh():
     scraped_jobs = []
+    # Get URL, use to get info
 
     KGH_CAREERS_URL = 'https://career5.successfactors.eu/career?company=KGH&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&_s.crb=lcJWb0ftX8PpE5Ez4PvdEQmYLSw%3d'
     options = webdriver.ChromeOptions()
@@ -32,6 +33,7 @@ def kgh():
 
     jobs = driver.find_elements_by_css_selector('tr.jobResultItem')
 
+    # Add to job dictionary
     for job in jobs:
         job_dict = {}
 
@@ -50,13 +52,16 @@ def kgh():
 
         job_dict['Sectors'] = []
 
+        # Determine sectors of job
         for sector in sectors:
             for syn in data[sector]:
-                if(syn in job_dict['Title']):
+                if(syn.lower() in job_dict['Title'].lower()):
                     job_dict['Sectors'].append(sector)
                     break
 
+        # Append job to positions array
         scraped_jobs.append(job_dict)
 
+    # Dump positions to json
     with open('./json_files/kgh_jobs.json', 'w') as out:
         json.dump(scraped_jobs, out)
