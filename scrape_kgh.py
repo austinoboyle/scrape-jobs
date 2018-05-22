@@ -39,24 +39,24 @@ def kgh():
 
         link = job.find_element_by_css_selector(
             'a.jobTitle').get_attribute('href')
-        job_dict['URL'] = link
+        job_dict['url'] = link
 
         name = job.find_element_by_css_selector('a.jobTitle')
-        job_dict['Title'] = name.text
-        job_dict['Company'] = 'Kingston General Hospital'
+        job_dict['title'] = name.text
+        job_dict['company'] = 'Kingston General Hospital'
 
         descriptions = job.find_elements_by_css_selector('span.jobContentEM')
-        descriptions_col = ['ID', 'Open_Date', 'Category']
+        descriptions_col = ['id', 'openDate', 'category']
         for title, col in zip(descriptions_col, descriptions):
             job_dict[title] = col.text
 
-        job_dict['Sectors'] = []
+        job_dict['sectors'] = []
 
         # Determine sectors of job
         for sector in sectors:
             for syn in data[sector]:
-                if(syn.lower() in job_dict['Title'].lower()):
-                    job_dict['Sectors'].append(sector)
+                if(syn.lower() in job_dict['title'].lower()):
+                    job_dict['sectors'].append(sector)
                     break
 
         # Append job to positions array

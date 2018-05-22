@@ -10,7 +10,7 @@ import json
 
 
 def keys():
-    content_titles = ['Title', 'Company', 'URL', 'Category', 'Description']
+    content_titles = ['title', 'company', 'url', 'category', 'description']
     postions = []
 
     # Get sectors
@@ -58,11 +58,11 @@ def keys():
                 job_dict[content_titles[i]] = content[i]
 
             # Determine sectors of job
-            job_dict['Sectors'] = []
+            job_dict['sectors'] = []
             for sector in sectors:
                 for syn in data[sector]:
-                    if(syn.lower() in job_dict['Title'].lower()):
-                        job_dict['Sectors'].append(sector)
+                    if(syn.lower() in job_dict['title'].lower()):
+                        job_dict['sectors'].append(sector)
                         break
 
             # Append job to positions array

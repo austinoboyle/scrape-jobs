@@ -13,7 +13,7 @@ def city():
     driver.get(CITY_CAREERS_URL)
     scraped_jobs = []
     #NUM_COLS = 6
-    col_titles = ['ID', 'Title', 'Category', 'Open_Date', 'Close_Date']
+    col_titles = ['id', 'title', 'category', 'openDate', 'closeDate']
 
     with open('sectors.json') as data_file:
         data = json.load(data_file)
@@ -30,18 +30,18 @@ def city():
         cols = job.find_elements_by_tag_name('td')
         link = job.find_element_by_css_selector(
             'a[title="View job details"]').get_attribute('href')
-        job_dict['URL'] = link
-        job_dict['Company'] = 'City of Kingston'
+        job_dict['url'] = link
+        job_dict['company'] = 'City of Kingston'
         for i, col in enumerate(cols):
             job_dict[col_titles[i]] = col.text
 
-        job_dict['Sectors'] = []
+        job_dict['sectors'] = []
 
         # Determine sectors of job
         for sector in sectors:
             for syn in data[sector]:
-                if(syn.lower() in job_dict['Title'].lower()):
-                    job_dict['Sectors'].append(sector)
+                if(syn.lower() in job_dict['title'].lower()):
+                    job_dict['sectors'].append(sector)
                     break
 
         # Append job to positions array

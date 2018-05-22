@@ -30,20 +30,20 @@ def indeed():
             job_dict = {}
             name = job.find_element_by_css_selector(
                 'a.jobtitle, a.turnstileLink')
-            job_dict['Title'] = name.text
+            job_dict['title'] = name.text
             company = job.find_element_by_css_selector('span.company')
-            job_dict['Company'] = company.text
+            job_dict['company'] = company.text
             link = job.find_element_by_css_selector(
                 'a.jobtitle, a.turnstileLink').get_attribute('href')
-            job_dict['URL'] = link
+            job_dict['url'] = link
 
-            job_dict['Sectors'] = []
+            job_dict['sectors'] = []
 
             # Determine sectors of job
             for sector in sectors:
                 for syn in data[sector]:
-                    if(syn.lower() in job_dict['Title'].lower()):
-                        job_dict['Sectors'].append(sector)
+                    if(syn.lower() in job_dict['title'].lower()):
+                        job_dict['sectors'].append(sector)
                         break
             # Append job to positions array
             scraped_jobs.append(job_dict)

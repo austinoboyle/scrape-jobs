@@ -21,7 +21,7 @@ def queens():
 
     scraped_jobs = []
     #NUM_COLS = 6
-    col_titles = ['ID', 'Title', 'Category', 'Type', 'Open_Date', 'Close_Date']
+    col_titles = ['id', 'title', 'category', 'type', 'openDate', 'closeDate']
 
     table = driver.find_element_by_id('searchtable')
     jobs = table.find_elements_by_css_selector('tbody tr')
@@ -32,17 +32,17 @@ def queens():
         cols = job.find_elements_by_tag_name('td')
         link = job.find_element_by_css_selector(
             'a[title="View job details"]').get_attribute('href')
-        job_dict['URL'] = link
-        job_dict['Company'] = "Queen's University"
+        job_dict['url'] = link
+        job_dict['company'] = "Queen's University"
         for title, col in zip(col_titles, cols):
             job_dict[title] = col.text
-        job_dict['Sectors'] = []
+        job_dict['sectors'] = []
 
         # Determine sectors of job
         for sector in sectors:
             for syn in data[sector]:
-                if(syn.lower() in job_dict['Title'].lower()):
-                    job_dict['Sectors'].append(sector)
+                if(syn.lower() in job_dict['title'].lower()):
+                    job_dict['sectors'].append(sector)
                     break
 
         # Append job to positions array
