@@ -24,6 +24,7 @@ def run_all():
     indeed()
     kgh()
     queens()
+    slc()
     # Run combine script
     combine()
 
