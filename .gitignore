@@ -1,2 +1,3 @@
 json_files/
 *.pyc
+.vscode/

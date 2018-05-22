@@ -1,10 +1,15 @@
-from selenium.webdriver import Chrome
+from selenium import webdriver
 import json
 from pprint import pprint
+import os
+
 
 def queens():
     QUEENS_CAREERS_URL = 'https://queensu.njoyn.com/cl4/xweb/Xweb.asp?tbtoken=Zl5aRR8XCB1xEHQDN1AmCCM%2FBmdEcCJfBkgjWiwME2UtXEQSXUdpcWMuJS5ALiRedQkbUxFaS3cqWA%3D%3D&chk=dFlbQBJe&page=joblisting&CLID=74827'
-    driver = Chrome()
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")
+    options.add_argument("--disable-gpu")
+    driver = webdriver.Chrome(chrome_options=options)
     driver.get(QUEENS_CAREERS_URL)
 
     with open('sectors.json') as data_file:
@@ -14,7 +19,7 @@ def queens():
         sectors.append(header)
 
     scraped_jobs = []
-    NUM_COLS = 6
+    #NUM_COLS = 6
     col_titles = ['ID', 'Title', 'Category', 'Type', 'Open_Date', 'Close_Date']
 
     table = driver.find_element_by_id('searchtable')
@@ -41,3 +46,4 @@ def queens():
 
     with open('./json_files/queens_jobs.json', 'w') as out:
         json.dump(scraped_jobs, out)
+
