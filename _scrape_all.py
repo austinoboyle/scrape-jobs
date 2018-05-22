@@ -14,6 +14,7 @@ from scrape_city import city
 from scrape_indeed import indeed
 from scrape_kgh import kgh
 from scrape_queens import queens
+from scrape_slc import slc
 from combined_jobs import combine
 
 # Run all scripts
