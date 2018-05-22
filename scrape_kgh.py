@@ -44,6 +44,7 @@ def kgh():
         name = job.find_element_by_css_selector('a.jobTitle')
         job_dict['title'] = name.text
         job_dict['company'] = 'Kingston General Hospital'
+        job_dict['img'] = 'https://s3.ca-central-1.amazonaws.com/beadonorca/uploads/KGH_vertstack_tag_col_FB-259dcedf563525b7c0152df0f5dfb0cc.jpg'
 
         descriptions = job.find_elements_by_css_selector('span.jobContentEM')
         descriptions_col = ['id', 'openDate', 'category']

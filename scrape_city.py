@@ -31,6 +31,7 @@ def city():
         link = job.find_element_by_css_selector(
             'a[title="View job details"]').get_attribute('href')
         job_dict['url'] = link
+        job_dict['img'] = 'https://www.cityofkingston.ca/image/layout_set_logo?img_id=10672&t=1525661847229'
         job_dict['company'] = 'City of Kingston'
         for i, col in enumerate(cols):
             job_dict[col_titles[i]] = col.text

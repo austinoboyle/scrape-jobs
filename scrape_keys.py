@@ -10,7 +10,8 @@ import json
 
 
 def keys():
-    content_titles = ['title', 'company', 'url', 'category', 'description']
+    content_titles = ['title', 'company',
+                      'url', 'img', 'category', 'description']
     postions = []
 
     # Get sectors
@@ -45,12 +46,19 @@ def keys():
             job_page = requests.get(job_url)
             job_soup = BeautifulSoup(job_page.text, 'html.parser')
 
+            try:
+                img_src = job_soup.find(class_="printme").find(
+                    'p').find('img')['src']
+                img = "http://www.keys.ca" + img_src
+            except:
+                img = 'http://www.keys.ca/assets/image/logo/logo_basic.png'
+
             industry = job_soup.find(class_="printme").find(
                 'small').text[16:].strip()
             description = job_soup.find(class_="printme").findAll('p')[2].text
 
             # Join all content into an array
-            content = [title, company, job_url, industry, description]
+            content = [title, company, job_url, img, industry, description]
             job_dict = {}
 
             # Add to job dictionary
@@ -71,3 +79,6 @@ def keys():
     # Dump positions to json
     with open('./json_files/keys_jobs.json', 'w') as out:
         json.dump(postions, out)
+
+
+keys()
