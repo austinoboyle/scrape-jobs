@@ -16,7 +16,15 @@
     "Practical"
   ],
 
-  "Hospitality": ["Cleaner", "Housekeeper", "Laundry attendant", "Hospitality"],
+  "Hospitality": [
+    "Cleaner",
+    "Housekeep",
+    "Laundry",
+    "Attendant",
+    "Hospitality",
+    "Clean",
+    "Maintenance"
+  ],
 
   "Restaurant": [
     "Restaurant",
@@ -25,21 +33,60 @@
     "Waiter",
     "Waitress",
     "Dishwasher",
-    "Food"
+    "Food",
+    "Kitchen",
+    "Mess",
+    "Bakery",
+    "Cafe",
+    "Prep",
+    "McDonalds",
+    "Subway",
+    "Ice Cream Scooper"
   ],
 
-  "Management": ["Management", "Manager", "Assistant", "Project", "Lead"],
+  "Management": [
+    "Management",
+    "Manager",
+    "Assistant",
+    "Project",
+    "Lead",
+    "Coordinator",
+    "Director",
+    "Program",
+    "Senior",
+    "Supervisor",
+    "Admin",
+    "Director",
+    "Logistic"
+  ],
 
   "Accounting & Finance": [
-    "Accounting",
+    "Account",
     "Finance",
     "Financial",
     "Auditor",
     "Bookkeeper",
-    "CPA"
+    "CPA",
+    "Payroll",
+    "Audit",
+    "Business",
+    "Analyst"
   ],
 
-  "Customer Service": ["Customer", "Service", "Sales", "Food"],
+  "Customer Service": [
+    "Customer",
+    "Service",
+    "Sales",
+    "Food",
+    "Advisor",
+    "Cashier",
+    "Shopper",
+    "Bartender",
+    "Clerk",
+    "Attendant",
+    "Reception",
+    "Clerk"
+  ],
 
   "Computer & IT": [
     "Programmer",
@@ -48,25 +95,43 @@
     "IT",
     "Tech",
     "Technology",
-    "Web"
+    "Web",
+    "Developer"
   ],
 
-  "Travel & Tourism": ["Tourism", "Travel", "Visitor"],
+  "Travel & Tourism": [
+    "Tourism",
+    "Travel",
+    "Visitor",
+    "Ferry"
+  ],
 
   "Construction": [
     "Construction",
     "Machine",
     "Carpenter",
-    "Landscaper",
+    "Landscape",
     "Field",
-    "Labourer",
+    "Labour",
     "Mechanical",
     "Grademan",
     "Surveyor",
     "Roofer",
     "Assembler",
     "Electrician",
-    "Welder"
+    "Welder",
+    "Manufacturing",
+    "Operator",
+    "Mechanic",
+    "Yard",
+    "Civil",
+    "Drywall",
+    "Worker",
+    "Skill",
+    "Install",
+    "Masonry",
+    "Plumber",
+    "Mover"
   ],
 
   "Personal Care & Services": [
@@ -78,6 +143,36 @@
     "Aide",
     "Aid",
     "Retirement",
-    "Child"
+    "Child",
+    "Counsel"
+  ],
+
+  "Transportation": [
+    "Transportation",
+    "Bus",
+    "Automotive",
+    "Drive"
+  ],
+
+  "Research": [
+    "Research",
+    "Analyst"
+  ],
+
+  "Marketing": [
+    "Marketing"
+  ],
+
+  "Education": [
+    "Teachers",
+    "Educat",
+    "Course",
+    "Literacy",
+    "Instructor"
+  ],
+
+  "Student": [
+    "Student",
+    "Summer"
   ]
 }
