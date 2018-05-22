@@ -33,6 +33,7 @@ def queens():
         link = job.find_element_by_css_selector(
             'a[title="View job details"]').get_attribute('href')
         job_dict['url'] = link
+        job_dict['img'] = "http://www.queensu.ca/mc_administrator/sites/default/files/assets/pages/QueensLogo_colour.jpg"
         job_dict['company'] = "Queen's University"
         for title, col in zip(col_titles, cols):
             job_dict[title] = col.text

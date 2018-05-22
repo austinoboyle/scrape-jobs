@@ -26,7 +26,12 @@ def indeed():
         jobs = driver.find_elements_by_css_selector('div.row.result.clickcard')
 
         # Add to job dictionary
-        for job in jobs:
+        
+        num_jobs = len(jobs)
+        for i in range(num_jobs):
+            jobs = driver.find_elements_by_css_selector(
+                'div.row.result.clickcard')
+            job = jobs[i]
             job_dict = {}
             name = job.find_element_by_css_selector(
                 'a.jobtitle, a.turnstileLink')
@@ -36,7 +41,17 @@ def indeed():
             link = job.find_element_by_css_selector(
                 'a.jobtitle, a.turnstileLink').get_attribute('href')
             job_dict['url'] = link
+            # job_dict['img'] = "https://d3v8fhblas9eb9.cloudfront.net/i/wp-content/uploads/2014/07/indeed-logo1.png"
 
+            driver.get(link)
+            try:
+                img = driver.find_element_by_css_selector(
+                    'img.cmp_logo_img').get_attribute('src')
+                job_dict['img'] = img
+            except:
+                job_dict['img'] = "https://d3v8fhblas9eb9.cloudfront.net/i/wp-content/uploads/2014/07/indeed-logo1.png"
+
+            driver.back()
             job_dict['sectors'] = []
 
             # Determine sectors of job
@@ -51,3 +66,6 @@ def indeed():
     # Dump positions to json
     with open('./json_files/indeed_jobs.json', 'w') as out:
         json.dump(scraped_jobs, out)
+
+
+indeed()
