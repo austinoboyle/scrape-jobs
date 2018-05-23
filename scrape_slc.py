@@ -10,10 +10,11 @@ import json
 
 
 def slc():
-    content_titles = ['title', 'company', 'type', 'url', 'education', 'closeDate'] #, 'category', 'description']
+    # Titles of each job element
+    content_titles = ['title', 'company', 'type', 'url', 'img', 'education', 'closeDate']
     postions = []
 
-    # Get sectors
+    # Get sectors from sectors file
     with open('sectors.json') as data_file:
         data = json.load(data_file)
     sectors = []
@@ -24,10 +25,9 @@ def slc():
     url = 'http://slc.totalhire.com/postings.php?l%5B-1%5D%5B%5D=l_10'
     page = requests.get(url)
     soup = BeautifulSoup(page.text, 'html.parser')
-    #list_of_jobs = soup.find_all(id="data", {"class" : lambda L: L and L.startswith('row')})
     table = soup.find('table')
     list_of_jobs = table.find_all(class_="row1") + table.find_all(class_="row2")
-    #print(list_of_jobs)
+
     # Go through each resulting jobs
     for j in list_of_jobs:
 
@@ -35,6 +35,7 @@ def slc():
         company = j.find(class_="dbgrab_Company_Name").text
         type = j.find(class_="dbgrab_Type").text
         job_url = "http://slc.totalhire.com/posting-view.php?p=" + j.find(class_="dbgrab_").find('a').get('name')
+        img = 'http://www.cornwallnewswatch.com/wp-content/uploads/2014/09/SLC_Logo.jpg?w=640'
 
         # Get more infor from the job url
         job_page = requests.get(job_url)
@@ -50,8 +51,8 @@ def slc():
             if ("Closing Date" in key):
                 closeDate = value
 
-
-        content = [title, company, type, job_url, education, closeDate]
+        # Join content together
+        content = [title, company, type, job_url, img, education, closeDate]
         job_dict = {}
 
         # Add to job dictionary
