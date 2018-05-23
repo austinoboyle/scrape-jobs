@@ -32,14 +32,9 @@ def keys():
         # Go through each resulting jobs
         for j in list_of_jobs:
 
-            # Company and Title Stored Together
-            # .replace("'", "\\\'")
-            title_and_company = j.find(class_="col-sm-4").text
-            t_and_c_arr = title_and_company.split('(#')
-
-            # Split Company and Title
-            title = t_and_c_arr[0].strip()
-            company = t_and_c_arr[1][5:].strip()
+            # Get Job Title and Company
+            title = j.find(class_="col-sm-4").find('a').text.split('(#')[0].strip()
+            company = j.find(class_="col-sm-4").find('small').text.strip()
 
             # Get URL, use to get description and industry
             job_url = str("http://keys.ca" + j.find('a').get('href'))
