@@ -51,7 +51,7 @@ def glassdoor():
 
             # Try to get lazy loaded logo
             try:
-                job_dict['img'] = job.find_element_by_css_selector('span.sqLogo.tighten.smSqLogo').find_element_by_css_selector('img.lazy.lazy-loaded').get_attribute('data-original')
+                job_dict['img'] = job.find_element_by_css_selector('span.sqLogo.tighten.smSqLogo').find_element_by_css_selector('img.lazy.lazy-loaded').get_attribute('data-original-2x')
             except: # If unable, use glassdoor logo
                 job_dict['img'] = 'https://media.glassdoor.com/brand-logo/green-stacked-logo/glassdoor-logo.jpg'
 
