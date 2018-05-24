@@ -10,8 +10,6 @@ import json
 
 
 def keys():
-    content_titles = ['title', 'company',
-                      'url', 'img', 'category', 'description']
     postions = []
 
     # Get sectors
@@ -31,13 +29,18 @@ def keys():
 
         # Go through each resulting jobs
         for j in list_of_jobs:
+            job_dict = {}
 
-            # Get Job Title and Company
+            # Get Job Title
             title = j.find(class_="col-sm-4").find('a').text.split('(#')[0].strip()
+            job_dict['title'] = title
+            # Get company
             company = j.find(class_="col-sm-4").find('small').text.strip()
+            job_dict['company'] = company
 
             # Get URL, use to get description and industry
             job_url = str("http://keys.ca" + j.find('a').get('href'))
+            job_dict['url'] = job_url
             job_page = requests.get(job_url)
             job_soup = BeautifulSoup(job_page.text, 'html.parser')
 
@@ -48,17 +51,17 @@ def keys():
             except:
                 img = 'http://www.keys.ca/assets/image/logo/logo_basic.png'
 
+            # Catch if not an accepted file format
+            if (not img.endswith('png')) and (not img.endswith('jpeg')):
+                # Set to default img
+                img = 'http://www.keys.ca/assets/image/logo/logo_basic.png'
+            job_dict['img'] = img
+
             industry = job_soup.find(class_="printme").find(
                 'small').text[16:].strip()
+            job_dict['category'] = industry
             description = job_soup.find(class_="printme").findAll('p')[2].text
-
-            # Join all content into an array
-            content = [title, company, job_url, img, industry, description]
-            job_dict = {}
-
-            # Add to job dictionary
-            for i in range(len(content_titles)):
-                job_dict[content_titles[i]] = content[i]
+            job_dict['description'] = description
 
             # Determine sectors of job
             job_dict['sectors'] = []
