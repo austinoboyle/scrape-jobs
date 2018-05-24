@@ -20,7 +20,7 @@ def combine():
     glassdoor_arr  = json.load(glassdoor_file)
 
     # Join arrays
-    full_arr = city_arr + queens_arr + keys_arr + kgh_arr + indeed_arr + slc_arr + glassdoor_arr
+    full_arr = glassdoor_arr + city_arr + queens_arr + keys_arr + kgh_arr + indeed_arr + slc_arr
 
     # Dump to json file
     with open('./json_files/combined_jobs.json', 'w') as out:
