@@ -10,6 +10,7 @@ def queens():
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")
     options.add_argument("--disable-gpu")
+    options.add_argument("--log-level=3")
     driver = webdriver.Chrome(chrome_options=options)
     driver.get(QUEENS_CAREERS_URL)
 

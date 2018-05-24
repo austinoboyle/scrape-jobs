@@ -9,11 +9,12 @@ from selenium.webdriver.support import expected_conditions as EC
 def kgh():
     scraped_jobs = []
     # Get URL, use to get info
-
-    KGH_CAREERS_URL = 'https://career5.successfactors.eu/career?company=KGH&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&_s.crb=lcJWb0ftX8PpE5Ez4PvdEQmYLSw%3d'
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")
     options.add_argument("--disable-gpu")
+    options.add_argument("--log-level=3")
+
+    KGH_CAREERS_URL = 'https://career5.successfactors.eu/career?company=KGH&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&_s.crb=lcJWb0ftX8PpE5Ez4PvdEQmYLSw%3d'
     driver = webdriver.Chrome(chrome_options=options)
     driver.get(KGH_CAREERS_URL)
 

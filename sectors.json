@@ -41,18 +41,16 @@
     "Prep",
     "McDonalds",
     "Subway",
-    "Ice Cream Scooper"
+    "Ice Cream Scooper",
+    "Barista"
   ],
 
   "Management": [
-    "Management",
-    "Manager",
-    "Assistant",
+    "Manage",
     "Project",
     "Lead",
     "Coordinator",
     "Director",
-    "Program",
     "Senior",
     "Supervisor",
     "Admin",
@@ -62,8 +60,7 @@
 
   "Accounting & Finance": [
     "Account",
-    "Finance",
-    "Financial",
+    "Financ",
     "Auditor",
     "Bookkeeper",
     "CPA",
@@ -94,7 +91,6 @@
     "QA",
     "IT",
     "Tech",
-    "Technology",
     "Web",
     "Developer"
   ],
@@ -156,7 +152,10 @@
 
   "Research": [
     "Research",
-    "Analyst"
+    "Analyst",
+    "Experiment",
+    "Science",
+    "Scientist"
   ],
 
   "Marketing": [
@@ -164,11 +163,14 @@
   ],
 
   "Education": [
-    "Teachers",
+    "Teach",
     "Educat",
     "Course",
     "Literacy",
-    "Instructor"
+    "Instructor",
+    "Professor",
+    "Faculty",
+    "Academic"
   ],
 
   "Student": [

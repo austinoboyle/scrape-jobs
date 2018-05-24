@@ -74,6 +74,3 @@ def keys():
     # Dump positions to json
     with open('./json_files/keys_jobs.json', 'w') as out:
         json.dump(postions, out)
-
-
-keys()

@@ -8,9 +8,10 @@ from pprint import pprint
 import requests
 from bs4 import BeautifulSoup
 
-# Run all scraping scripts
-from scrape_keys import keys
+# Import all scraping scripts
 from scrape_city import city
+from scrape_keys import keys
+from scrape_glassdoor import glassdoor
 from scrape_indeed import indeed
 from scrape_kgh import kgh
 from scrape_queens import queens
@@ -19,9 +20,10 @@ from combined_jobs import combine
 
 # Run all scripts
 def run_all():
-    keys()
     city()
+    glassdoor()
     indeed()
+    keys()
     kgh()
     queens()
     slc()

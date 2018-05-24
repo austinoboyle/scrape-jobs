@@ -9,18 +9,20 @@ def city():
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")
     options.add_argument("--disable-gpu")
+    options.add_argument("--log-level=3")
     driver = webdriver.Chrome(chrome_options=options)
     driver.get(CITY_CAREERS_URL)
     scraped_jobs = []
-    #NUM_COLS = 6
     col_titles = ['id', 'title', 'category', 'openDate', 'closeDate']
 
+    # Get sectors
     with open('sectors.json') as data_file:
         data = json.load(data_file)
     sectors = []
     for header in data:
         sectors.append(header)
 
+    # Get table and jobs in table
     table = driver.find_element_by_id('searchtable')
     jobs = table.find_elements_by_css_selector('tbody tr')
 
