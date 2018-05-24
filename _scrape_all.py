@@ -17,6 +17,7 @@ from scrape_kgh import kgh
 from scrape_queens import queens
 from scrape_slc import slc
 from combined_jobs import combine
+from _filter_duplicates import filter
 
 # Run all scripts
 def run_all():
@@ -29,5 +30,7 @@ def run_all():
     slc()
     # Run combine script
     combine()
+    # Filter out duplicates
+    filter()
 
 run_all()

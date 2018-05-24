@@ -25,13 +25,3 @@ def combine():
     # Dump to json file
     with open('./json_files/combined_jobs.json', 'w') as out:
         json.dump(full_arr, out)
-
-    # Build .js version
-    VAR_NAME = 'data'
-    file_text = 'export const {} = '.format(VAR_NAME)
-    file_text += str(full_arr)
-    file_text += ';'
-
-    # Dump to .js file
-    with open('./json_files/combined_jobs.js', 'w') as out:
-        out.write(file_text)
