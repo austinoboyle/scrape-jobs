@@ -73,5 +73,3 @@ def slc():
     # Dump positions to json
     with open('./json_files/slc_jobs.json', 'w') as out:
         json.dump(postions, out)
-
-slc()

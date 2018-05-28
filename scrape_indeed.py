@@ -70,5 +70,3 @@ def indeed():
     # Dump positions to json
     with open('./json_files/indeed_jobs.json', 'w') as out:
         json.dump(scraped_jobs, out)
-
-indeed()

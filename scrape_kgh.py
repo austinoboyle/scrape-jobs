@@ -67,5 +67,3 @@ def kgh():
     # Dump positions to json
     with open('./json_files/kgh_jobs.json', 'w') as out:
         json.dump(scraped_jobs, out)
-
-kgh()
