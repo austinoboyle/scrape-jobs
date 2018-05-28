@@ -16,23 +16,27 @@ def glassdoor():
     for header in data:
         sectors.append(header)
 
+    # Instantiate web drivers; one to get list of jobs, one for description
+    driver = webdriver.Chrome(chrome_options=options)
+    desc_driver = webdriver.Chrome(chrome_options=options)
+
     # Iterate through every page
-    for page_num in range(1, 19):
+    for page_num in range(1, 2): #19
         # Get URL, use to get info
         GLASSDOOR_CAREERS_URL = 'https://www.glassdoor.ca/Job/kingston-jobs-SRCH_IL.0,8_IC2288886_IP' + str(page_num) + '.htm'
-
-        driver = webdriver.Chrome(chrome_options=options)
         driver.get(GLASSDOOR_CAREERS_URL)
-        jobs = driver.find_elements_by_class_name('jl')
 
-        # Scroll the entire page
+        # Scroll the entire height of the page
         scheight = .1
         while scheight < 9.9:
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight/%s);" % scheight)
             scheight += .01
-        # Driver to get link an array
-        desc_driver = webdriver.Chrome(chrome_options=options)
-        # Add to job dictionary
+
+        # Get list of all jobs on this page
+        table = driver.find_element_by_css_selector('ul.jlGrid.hover')
+        jobs = table.find_elements_by_css_selector('li.jl')
+
+        # Add the job info to the job dictionary
         for job in jobs:
             # Instantiate job dictionary
             job_dict = {}
@@ -52,17 +56,31 @@ def glassdoor():
             # Try to get lazy loaded logo
             try:
                 job_dict['img'] = job.find_element_by_css_selector('span.sqLogo.tighten.smSqLogo').find_element_by_css_selector('img.lazy.lazy-loaded').get_attribute('data-original-2x')
-            except: # If unable, use glassdoor logo
+            except: # If unable, use default glassdoor logo
                 job_dict['img'] = 'https://media.glassdoor.com/brand-logo/green-stacked-logo/glassdoor-logo.jpg'
 
             # Go to the job's link
             desc_driver.get(link)
+
+            # Click the "Read More" button for full description
+            try:
+                desc_driver.find_element_by_css_selector('div.readMore').click()
+            except:
+                pass # Button not found
             # Try to get description
             try:
                 job_dict['description'] = desc_driver.find_element_by_css_selector('div.jobDescriptionContent.desc.module.pad.noMargBot.collapsed.noPadBot').text
             except:
                 job_dict['description'] = ""
-            desc_driver.back()
+
+            # Get type of employement from description and title
+            desc = job_dict['title'].lower() + job_dict['description'].lower()
+            if ("full-time" in desc) or ("full time" in desc):
+                job_dict['type'] = "Full Time"
+            elif ("part-time" in desc) or ("part time" in desc):
+                job_dict['type'] = "Part Time"
+            else:
+                job_dict['type'] = ""
 
             # Determine sectors of job
             job_dict['sectors'] = []
@@ -74,7 +92,13 @@ def glassdoor():
             # Append job to positions array
             scraped_jobs.append(job_dict)
 
+    # Close web drivers
+    driver.close()
+    desc_driver.close()
+
 
     # Dump positions to json
     with open('./json_files/glassdoor_jobs.json', 'w') as out:
         json.dump(scraped_jobs, out)
+
+glassdoor()

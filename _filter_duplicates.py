@@ -29,3 +29,5 @@ def filter():
     # Dump to json file
     with open('./json_files/jobs.json', 'w') as out:
         json.dump(filtered_arr, out)
+
+filter()

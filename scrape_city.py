@@ -53,3 +53,5 @@ def city():
     # Dump positions to json
     with open('./json_files/city_jobs.json', 'w') as out:
         json.dump(scraped_jobs, out)
+
+city()

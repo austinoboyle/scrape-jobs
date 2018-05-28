@@ -7,6 +7,7 @@ import json
 from pprint import pprint
 import requests
 from bs4 import BeautifulSoup
+from datetime import datetime
 
 # Import all scraping scripts
 from scrape_city import city
@@ -21,6 +22,7 @@ from _filter_duplicates import filter
 
 # Run all scripts
 def run_all():
+    print("Run all started at "+ str(datetime.now()))
     city()
     glassdoor()
     indeed()
@@ -32,5 +34,6 @@ def run_all():
     combine()
     # Filter out duplicates
     filter()
+    print("Run all ended at "+ str(datetime.now()))
 
 run_all()

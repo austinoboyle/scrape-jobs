@@ -53,3 +53,5 @@ def queens():
     # Dump positions to json
     with open('./json_files/queens_jobs.json', 'w') as out:
         json.dump(scraped_jobs, out)
+
+queens()
