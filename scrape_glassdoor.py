@@ -5,9 +5,9 @@ from pprint import pprint
 def glassdoor():
     scraped_jobs = []
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--log-level=3")
+    # options.add_argument("--headless")
+    # options.add_argument("--disable-gpu")
+    # options.add_argument("--log-level=3")
 
     # Get sectors file
     with open('sectors.json') as data_file:
@@ -21,7 +21,7 @@ def glassdoor():
     desc_driver = webdriver.Chrome(chrome_options=options)
 
     # Iterate through every page
-    for page_num in range(1, 2): #19
+    for page_num in range(1, 19):
         # Get URL, use to get info
         GLASSDOOR_CAREERS_URL = 'https://www.glassdoor.ca/Job/kingston-jobs-SRCH_IL.0,8_IC2288886_IP' + str(page_num) + '.htm'
         driver.get(GLASSDOOR_CAREERS_URL)
@@ -69,7 +69,7 @@ def glassdoor():
                 pass # Button not found
             # Try to get description
             try:
-                job_dict['description'] = desc_driver.find_element_by_css_selector('div.jobDescriptionContent.desc.module.pad.noMargBot.collapsed.noPadBot').text
+                job_dict['description'] = desc_driver.find_element_by_css_selector('div.jobDescriptionContent.desc.module.pad').text
             except:
                 job_dict['description'] = ""
 
