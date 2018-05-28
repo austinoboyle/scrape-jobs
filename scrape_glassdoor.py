@@ -5,9 +5,9 @@ from pprint import pprint
 def glassdoor():
     scraped_jobs = []
     options = webdriver.ChromeOptions()
-    # options.add_argument("--headless")
-    # options.add_argument("--disable-gpu")
-    # options.add_argument("--log-level=3")
+    options.add_argument("--headless")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--log-level=3")
 
     # Get sectors file
     with open('sectors.json') as data_file:
