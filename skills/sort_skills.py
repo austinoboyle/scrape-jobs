@@ -1,8 +1,11 @@
 import json
+from datetime import datetime
 
 def sort_skills():
+    print("Started at "+ str(datetime.now()))
+
     # Access skills file
-    skills_file = open('./full_skills_list.json')
+    skills_file = open('./full_skills.json')
 
     # Read both files into independant arrays
     skills_arr = json.load(skills_file)["skills"]
@@ -13,7 +16,8 @@ def sort_skills():
     for skill in skills_arr:
         # Add to list if not already
         if skill not in skills:
-            skills.append(skill)
+            if len(skill) > 2:
+                skills.append(skill)
 
     # Sort list alphabetically
     skills.sort()
@@ -21,7 +25,9 @@ def sort_skills():
     skills_dict["skills"] = skills
 
     # Dump to json file
-    with open('./full_skills_list.json', 'w') as out:
+    with open('./full_skills.json', 'w+') as out:
         json.dump(skills_dict, out)
+
+    print("Finished at "+ str(datetime.now()))
 
 sort_skills()
