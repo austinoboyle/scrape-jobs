@@ -69,28 +69,61 @@ def run_all():
 # Combine all jobs to jobs.json
 def combine():
     print("File combining started at "+ str(datetime.now()))
-    # Access files
-    city_file = open('../json_files/city_jobs.json')
-    queens_file = open('../json_files/queens_jobs.json')
-    keys_file = open('../json_files/keys_jobs.json')
-    kgh_file = open('../json_files/kgh_jobs.json')
-    indeed_file = open('../json_files/indeed_jobs.json')
-    slc_file = open('../json_files/slc_jobs.json')
-    glassdoor_file = open('../json_files/glassdoor_jobs.json')
+    full_arr = []
 
-    # Read into array
-    city_arr = json.load(city_file)
-    queens_arr = json.load(queens_file)
-    keys_arr = json.load(keys_file)
-    kgh_arr = json.load(kgh_file)
-    indeed_arr = json.load(indeed_file)
-    slc_arr  = json.load(slc_file)
-    glassdoor_arr  = json.load(glassdoor_file)
+    # Try to read each of the individual job files
 
-    # Join arrays
-    full_arr = glassdoor_arr + indeed_arr + keys_arr + queens_arr + slc_arr + city_arr + kgh_arr
+    try: # Try to read glassdoor jobs
+        glassdoor_file = open('../json_files/glassdoor_jobs.json')
+        glassdoor_arr  = json.load(glassdoor_file)
+        full_arr = full_arr +  glassdoor_arr
+    except:
+        print("Glassdoor file read failed.")
 
-    # Dump to json file
+    try: # Try to read indeed jobs
+        indeed_file = open('../json_files/indeed_jobs.json')
+        indeed_arr = json.load(indeed_file)
+        full_arr = full_arr +  indeed_arr
+    except:
+        print("Indeed file read failed.")
+
+    try: # Try to read keys jobs
+        keys_file = open('../json_files/keys_jobs.json')
+        keys_arr = json.load(keys_file)
+        full_arr = full_arr +  keys_arr
+    except:
+        print("Keys file read failed.")
+
+    try: # Try to read queens jobs
+        queens_file = open('../json_files/queens_jobs.json')
+        queens_arr = json.load(queens_file)
+        full_arr = full_arr + queens_arr
+    except:
+        print("Queens file read failed.")
+
+    try: # Try to read slc jobs
+        slc_file = open('../json_files/slc_jobs.json')
+        slc_arr  = json.load(slc_file)
+        full_arr = full_arr +  slc_arr
+    except:
+        print("Slc file read failed.")
+
+    try: # Try to read city jobs
+        city_file = open('../json_files/city_jobs.json')
+        city_arr = json.load(city_file)
+        full_arr = full_arr + city_arr
+    except:
+        print("City file read failed.")
+
+    try: # Try to read kgh jobs
+        kgh_file = open('../json_files/kgh_jobs.json')
+        kgh_arr = json.load(kgh_file)
+        full_arr = full_arr +  kgh_arr
+    except:
+        print("Kgh file read failed.")
+
+
+    # Dump resulting combined job array to json file
     with open('../json_files/jobs.json', 'w') as out:
         json.dump(full_arr, out)
 
