@@ -17,23 +17,140 @@ from scrape_indeed import indeed
 from scrape_kgh import kgh
 from scrape_queens import queens
 from scrape_slc import slc
-from combined_jobs import combine
-from _filter_duplicates import filter
 
 # Run all scripts
 def run_all():
     print("Run all started at "+ str(datetime.now()))
-    city()
-    glassdoor()
-    indeed()
-    keys()
-    kgh()
-    queens()
-    slc()
+    # Scrape websites
+    try:
+        print("City started at "+ str(datetime.now()))
+        city()
+    except:
+        print("City failed")
+    try:
+        print("Glassdoor started at "+ str(datetime.now()))
+        glassdoor()
+    except:
+        print("Glassdoor failed")
+    try:
+        print("Indeed started at "+ str(datetime.now()))
+        indeed()
+    except:
+        print("Indeed failed")
+    try:
+        print("Keys started at "+ str(datetime.now()))
+        keys()
+    except:
+        print("Keys failed")
+    try:
+        print("Kgh started at "+ str(datetime.now()))
+        kgh()
+    except:
+        print("Kgh failed")
+    try:
+        print("Queens started at "+ str(datetime.now()))
+        queens()
+    except:
+        print("Queens failed")
+    try:
+        print("Slc started at "+ str(datetime.now()))
+        slc()
+    except:
+        print("Slc failed")
+
     # Run combine script
     combine()
     # Filter out duplicates
-    filter()
+    filter_dups()
+    # Add sectors
+    sectors()
     print("Run all ended at "+ str(datetime.now()))
+
+# Combine all jobs to jobs.json
+def combine():
+    print("File combining started at "+ str(datetime.now()))
+    # Access files
+    city_file = open('../json_files/city_jobs.json')
+    queens_file = open('../json_files/queens_jobs.json')
+    keys_file = open('../json_files/keys_jobs.json')
+    kgh_file = open('../json_files/kgh_jobs.json')
+    indeed_file = open('../json_files/indeed_jobs.json')
+    slc_file = open('../json_files/slc_jobs.json')
+    glassdoor_file = open('../json_files/glassdoor_jobs.json')
+
+    # Read into array
+    city_arr = json.load(city_file)
+    queens_arr = json.load(queens_file)
+    keys_arr = json.load(keys_file)
+    kgh_arr = json.load(kgh_file)
+    indeed_arr = json.load(indeed_file)
+    slc_arr  = json.load(slc_file)
+    glassdoor_arr  = json.load(glassdoor_file)
+
+    # Join arrays
+    full_arr = glassdoor_arr + indeed_arr + keys_arr + queens_arr + slc_arr + city_arr + kgh_arr
+
+    # Dump to json file
+    with open('../json_files/jobs.json', 'w') as out:
+        json.dump(full_arr, out)
+
+
+# Filter out duplicate jobs
+def filter_dups():
+    print("Filtering duplicates started at "+ str(datetime.now()))
+    # Access jobs file
+    jobs_file = open('../json_files/jobs.json')
+    # Read into array
+    jobs_arr = json.load(jobs_file)
+    # Empty array for filtered jobs
+    filtered_arr = []
+
+    # Iterate through every job
+    for job in jobs_arr:
+        dup = False
+        # Check against each element in filtered jobs array
+        for filtered_job in filtered_arr:
+            # Check if title and company are duplicates
+            title_dup = job['title'] == filtered_job['title']
+            company_dup = job['company'] == filtered_job['company']
+            # Set flag and pass if it is a duplicate
+            if title_dup and company_dup:
+                dup = True
+                pass
+        # If not in filtered jobs, append it
+        if dup == False:
+            filtered_arr.append(job)
+
+    # Dump to json file
+    with open('../json_files/jobs.json', 'w') as out:
+        json.dump(filtered_arr, out)
+
+def sectors():
+    print("Getting sectors started at "+ str(datetime.now()))
+    # Access jobs file
+    jobs_file = open('../json_files/jobs.json')
+    # Read into array
+    jobs_arr = json.load(jobs_file)
+
+    # Access sectors file
+    with open('../sectors/sectors.json') as data_file:
+        data = json.load(data_file)
+    sectors = []
+    for header in data:
+        sectors.append(header)
+
+    # Iterate through jobs
+    for job in jobs_arr:
+        # Determine sectors
+        job['sectors'] = []
+        for sector in sectors:
+            for syn in data[sector]:
+                if(syn.lower() in job['title'].lower()):
+                    job['sectors'].append(sector)
+                    break
+
+    # Dump to json file
+    with open('../json_files/jobs.json', 'w') as out:
+        json.dump(jobs_arr, out)
 
 run_all()

@@ -1,6 +1,7 @@
 from selenium import webdriver
+import requests
+from bs4 import BeautifulSoup
 import json
-from pprint import pprint
 import os
 
 
@@ -14,14 +15,7 @@ def queens():
     driver = webdriver.Chrome(chrome_options=options)
     driver.get(QUEENS_CAREERS_URL)
 
-    with open('sectors.json') as data_file:
-        data = json.load(data_file)
-    sectors = []
-    for header in data:
-        sectors.append(header)
-
     scraped_jobs = []
-    #NUM_COLS = 6
     col_titles = ['id', 'title', 'category', 'type', 'openDate', 'closeDate']
 
     table = driver.find_element_by_id('searchtable')
@@ -38,18 +32,16 @@ def queens():
         job_dict['company'] = "Queen's University"
         for title, col in zip(col_titles, cols):
             job_dict[title] = col.text
-        job_dict['sectors'] = []
 
-        # Determine sectors of job
-        for sector in sectors:
-            for syn in data[sector]:
-                if(syn.lower() in job_dict['title'].lower()):
-                    job_dict['sectors'].append(sector)
-                    break
+        # Go to page to get description
+        page = requests.get(link)
+        soup = BeautifulSoup(page.text, 'html.parser')
+        desc = soup.find_all(class_="njnSection noborder")[1].text
+        job_dict['description'] = desc
 
         # Append job to positions array
         scraped_jobs.append(job_dict)
 
     # Dump positions to json
-    with open('./json_files/queens_jobs.json', 'w') as out:
+    with open('../json_files/queens_jobs.json', 'w') as out:
         json.dump(scraped_jobs, out)

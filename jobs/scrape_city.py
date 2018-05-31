@@ -15,13 +15,6 @@ def city():
     scraped_jobs = []
     col_titles = ['id', 'title', 'category', 'openDate', 'closeDate']
 
-    # Get sectors
-    with open('sectors.json') as data_file:
-        data = json.load(data_file)
-    sectors = []
-    for header in data:
-        sectors.append(header)
-
     # Get table and jobs in table
     table = driver.find_element_by_id('searchtable')
     jobs = table.find_elements_by_css_selector('tbody tr')
@@ -38,18 +31,9 @@ def city():
         for i, col in enumerate(cols):
             job_dict[col_titles[i]] = col.text
 
-        job_dict['sectors'] = []
-
-        # Determine sectors of job
-        for sector in sectors:
-            for syn in data[sector]:
-                if(syn.lower() in job_dict['title'].lower()):
-                    job_dict['sectors'].append(sector)
-                    break
-
         # Append job to positions array
         scraped_jobs.append(job_dict)
 
     # Dump positions to json
-    with open('./json_files/city_jobs.json', 'w') as out:
+    with open('../json_files/city_jobs.json', 'w') as out:
         json.dump(scraped_jobs, out)

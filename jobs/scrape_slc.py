@@ -11,15 +11,8 @@ import json
 
 def slc():
     # Titles of each job element
-    content_titles = ['title', 'company', 'type', 'url', 'img', 'education', 'closeDate']
+    content_titles = ['title', 'company', 'type', 'url', 'img', 'education', 'closeDate', 'description']
     postions = []
-
-    # Get sectors from sectors file
-    with open('sectors.json') as data_file:
-        data = json.load(data_file)
-    sectors = []
-    for header in data:
-        sectors.append(header)
 
     # Get the url
     url = 'http://slc.totalhire.com/postings.php?l%5B-1%5D%5B%5D=l_10'
@@ -39,10 +32,11 @@ def slc():
 
         # Get more infor from the job url
         job_page = requests.get(job_url)
-        job_soup = BeautifulSoup(job_page.text, 'html.parser')
-        job_cats = job_soup.find_all(class_="row")
         education = ""
         closeDate = ""
+        job_soup = BeautifulSoup(job_page.text, 'html.parser')
+        description = job_soup.find(class_="description").text.strip()
+        job_cats = job_soup.find_all(class_="row")
         for cat in job_cats:
             key = cat.find(class_="title").text.strip()
             value = cat.find(class_="response").text.strip()
@@ -52,24 +46,16 @@ def slc():
                 closeDate = value
 
         # Join content together
-        content = [title, company, type, job_url, img, education, closeDate]
+        content = [title, company, type, job_url, img, education, closeDate, description]
         job_dict = {}
 
         # Add to job dictionary
         for i in range(len(content_titles)):
             job_dict[content_titles[i]] = content[i]
 
-        # Determine sectors of job
-        job_dict['sectors'] = []
-        for sector in sectors:
-            for syn in data[sector]:
-                if(syn.lower() in job_dict['title'].lower()):
-                    job_dict['sectors'].append(sector)
-                    break
-
         # Append job to positions array
         postions.append(job_dict)
 
     # Dump positions to json
-    with open('./json_files/slc_jobs.json', 'w') as out:
+    with open('../json_files/slc_jobs.json', 'w') as out:
         json.dump(postions, out)

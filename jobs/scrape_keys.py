@@ -12,13 +12,6 @@ import json
 def keys():
     postions = []
 
-    # Get sectors
-    with open('sectors.json') as data_file:
-        data = json.load(data_file)
-    sectors = []
-    for header in data:
-        sectors.append(header)
-
     # Iterate through every page
     for page_num in range(1, 22):
         # Build the new url for the page
@@ -63,17 +56,9 @@ def keys():
             description = job_soup.find(class_="printme").findAll('p')[2].text
             job_dict['description'] = description
 
-            # Determine sectors of job
-            job_dict['sectors'] = []
-            for sector in sectors:
-                for syn in data[sector]:
-                    if(syn.lower() in job_dict['title'].lower()):
-                        job_dict['sectors'].append(sector)
-                        break
-
             # Append job to positions array
             postions.append(job_dict)
 
     # Dump positions to json
-    with open('./json_files/keys_jobs.json', 'w') as out:
+    with open('../json_files/keys_jobs.json', 'w') as out:
         json.dump(postions, out)

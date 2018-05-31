@@ -9,13 +9,6 @@ def glassdoor():
     options.add_argument("--disable-gpu")
     options.add_argument("--log-level=3")
 
-    # Get sectors file
-    with open('sectors.json') as data_file:
-        data = json.load(data_file)
-    sectors = []
-    for header in data:
-        sectors.append(header)
-
     # Instantiate web drivers; one to get list of jobs, one for description
     driver = webdriver.Chrome(chrome_options=options)
     desc_driver = webdriver.Chrome(chrome_options=options)
@@ -82,13 +75,6 @@ def glassdoor():
             else:
                 job_dict['type'] = ""
 
-            # Determine sectors of job
-            job_dict['sectors'] = []
-            for sector in sectors:
-                for syn in data[sector]:
-                    if(syn.lower() in job_dict['title'].lower()):
-                        job_dict['sectors'].append(sector)
-                        break
             # Append job to positions array
             scraped_jobs.append(job_dict)
 
@@ -96,7 +82,6 @@ def glassdoor():
     driver.close()
     desc_driver.close()
 
-
     # Dump positions to json
-    with open('./json_files/glassdoor_jobs.json', 'w') as out:
+    with open('../json_files/glassdoor_jobs.json', 'w') as out:
         json.dump(scraped_jobs, out)

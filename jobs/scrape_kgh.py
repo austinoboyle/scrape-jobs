@@ -26,12 +26,6 @@ def kgh():
         print("TIMEOUT EXCEPTION")
         driver.quit()
 
-    with open('sectors.json') as data_file:
-        data = json.load(data_file)
-    sectors = []
-    for header in data:
-        sectors.append(header)
-
     jobs = driver.find_elements_by_css_selector('tr.jobResultItem')
 
     # Add to job dictionary
@@ -52,18 +46,9 @@ def kgh():
         for title, col in zip(descriptions_col, descriptions):
             job_dict[title] = col.text
 
-        job_dict['sectors'] = []
-
-        # Determine sectors of job
-        for sector in sectors:
-            for syn in data[sector]:
-                if(syn.lower() in job_dict['title'].lower()):
-                    job_dict['sectors'].append(sector)
-                    break
-
         # Append job to positions array
         scraped_jobs.append(job_dict)
 
     # Dump positions to json
-    with open('./json_files/kgh_jobs.json', 'w') as out:
+    with open('../json_files/kgh_jobs.json', 'w') as out:
         json.dump(scraped_jobs, out)
