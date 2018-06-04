@@ -1,6 +1,8 @@
 from selenium import webdriver
 import json
 from pprint import pprint
+import requests
+from bs4 import BeautifulSoup
 
 
 def city():
@@ -13,7 +15,6 @@ def city():
     driver = webdriver.Chrome(chrome_options=options)
     driver.get(CITY_CAREERS_URL)
     scraped_jobs = []
-    col_titles = ['id', 'title', 'category', 'openDate', 'closeDate']
 
     # Get table and jobs in table
     table = driver.find_element_by_id('searchtable')
@@ -28,8 +29,11 @@ def city():
         job_dict['url'] = link
         job_dict['img'] = 'https://www.cityofkingston.ca/image/layout_set_logo?img_id=10672&t=1525661847229'
         job_dict['company'] = 'City of Kingston'
-        for i, col in enumerate(cols):
-            job_dict[col_titles[i]] = col.text
+        # Get more information from the job url
+        job_page = requests.get(link)
+        job_soup = BeautifulSoup(job_page.text, 'html.parser')
+        job_dict['description'] = job_soup.find("div", {"id": "jobDetailInformation"}).text.strip()
+        job_dict['title'] = job_soup.find(class_="longitem").text.strip()
 
         # Append job to positions array
         scraped_jobs.append(job_dict)
