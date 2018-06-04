@@ -19,9 +19,23 @@ from scrape_queens import queens
 from scrape_slc import slc
 
 # Run all scripts
-def run_all():
+def run():
     print("Run all started at "+ str(datetime.now()))
     # Scrape websites
+    scrape()
+    # Run combine script
+    combine()
+    # Filter out duplicates
+    filter_dups()
+    # Add sectors
+    sectors()
+    # Add skills to each job
+    get_skills()
+    # Print the time it ended
+    print("Run all ended at "+ str(datetime.now()))
+
+# Scrape all jobs
+def scrape():
     try:
         print("City started at "+ str(datetime.now()))
         city()
@@ -57,14 +71,6 @@ def run_all():
         slc()
     except:
         print("Slc failed")
-
-    # Run combine script
-    combine()
-    # Filter out duplicates
-    filter_dups()
-    # Add sectors
-    sectors()
-    print("Run all ended at "+ str(datetime.now()))
 
 # Combine all jobs to jobs.json
 def combine():
@@ -159,7 +165,7 @@ def filter_dups():
         json.dump(filtered_arr, out)
 
 def sectors():
-    print("Getting sectors started at "+ str(datetime.now()))
+    print("Get sectors started at "+ str(datetime.now()))
     # Access jobs file
     jobs_file = open('../json_files/jobs.json')
     # Read into array
@@ -186,4 +192,39 @@ def sectors():
     with open('../json_files/jobs.json', 'w') as out:
         json.dump(jobs_arr, out)
 
-run_all()
+# Get the required skills for each job
+def get_skills():
+    print("Get skills started at "+ str(datetime.now()))
+
+    # Access jobs file
+    jobs_file = open('../json_files/jobs.json')
+    jobs_arr = json.load(jobs_file)
+    print("Got jobs...")
+
+    # Access skills file
+    skills_file = open('../skills/full_skills.json')
+    skills_arr = json.load(skills_file)["skills"]
+    print("Got skills...")
+
+    # Iterate through every job
+    for job in jobs_arr:
+        # Instantiate an empty required skills array
+        req_skills = []
+        for skill in skills_arr:
+            try:
+                concat = (job['title'] + " " + job['description'])
+                # If skill in description, add to required skills
+                if skill in (job['title'] + " " + job['description']):
+                    req_skills.append(skill)
+            except:
+                pass
+        # Add to skills section of job
+        job['skills'] = req_skills
+
+    # Dump to json file
+    with open('../json_files/jobs_with_skills.json', 'w') as out:
+        json.dump(jobs_arr, out)
+
+
+# Start
+run()
