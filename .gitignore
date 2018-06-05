@@ -2,3 +2,4 @@ json_files/
 *.pyc
 .vscode/
 sector_list.json
+match_skills.py

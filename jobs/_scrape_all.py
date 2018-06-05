@@ -42,8 +42,9 @@ def scrape():
     except:
         print("City failed")
     try:
-        print("Glassdoor started at "+ str(datetime.now()))
-        glassdoor()
+        # print("Glassdoor started at "+ str(datetime.now()))
+        # glassdoor()
+        raise Exception('Glassdoor being skipped')
     except:
         print("Glassdoor failed")
     try:
@@ -197,11 +198,12 @@ def get_skills():
     print("Get skills started at "+ str(datetime.now()))
 
     # Access jobs file
-    jobs_file = open('../json_files/jobs.json')
+    jobs_file = open('../json_files/jobs.json', encoding="utf8")
     jobs_arr = json.load(jobs_file)
 
     # Access skills file
-    skills_file = open('../skills/full_skills.json')
+    # skills_file = open('../skills/short_skills.json')
+    skills_file = open('C:/Users/cesurk/Desktop/git_projects/pdf-parser/skills_linkedin_clean.json')
     skills_arr = json.load(skills_file)["skills"]
 
     # Iterate through every job
