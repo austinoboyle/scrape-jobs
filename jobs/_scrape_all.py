@@ -199,12 +199,10 @@ def get_skills():
     # Access jobs file
     jobs_file = open('../json_files/jobs.json')
     jobs_arr = json.load(jobs_file)
-    print("Got jobs...")
 
     # Access skills file
     skills_file = open('../skills/full_skills.json')
     skills_arr = json.load(skills_file)["skills"]
-    print("Got skills...")
 
     # Iterate through every job
     for job in jobs_arr:

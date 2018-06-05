@@ -28,6 +28,7 @@ def glassdoor():
         # Get list of all jobs on this page
         table = driver.find_element_by_css_selector('ul.jlGrid.hover')
         jobs = table.find_elements_by_css_selector('li.jl')
+        print("Found list of jobs on page " + page_num +":")
 
         # Add the job info to the job dictionary
         for job in jobs:
@@ -37,6 +38,7 @@ def glassdoor():
             # Get title
             title = job.find_element_by_class_name('flexbox').text.strip()
             job_dict['title'] = title
+            print(title)
 
             # Get company
             company = job.find_element_by_css_selector('div.flexbox.empLoc').find_element_by_css_selector('div').text.strip()
@@ -85,3 +87,5 @@ def glassdoor():
     # Dump positions to json
     with open('../json_files/glassdoor_jobs.json', 'w') as out:
         json.dump(scraped_jobs, out)
+
+glassdoor()
